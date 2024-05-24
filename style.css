@@ -17,11 +17,6 @@
     font-weight: 500;
 }
 
-body {
-  
-}
-
-
 
 /*geral*/
 .geralDiv {
@@ -67,7 +62,7 @@ header{
 }
 
 .menuHeader img{
-    height: 1vw;
+    height: 1.3vw;
 }
 
 #closeMenu {
@@ -75,7 +70,7 @@ header{
 }
 
 #logoHeader img{
-    width: 60%;
+    width: 70%;
 }
 
 #menuItems li {
@@ -120,7 +115,7 @@ footer{
 }
 
 #logoFooter{
-    width:13vw;
+    width:15vw;
 } 
 .footerContent{
     display: flex;

@@ -17,6 +17,20 @@
     font-weight: 500;
 }
 
+p , li{
+    font-size: calc(12px + 0.2vw);
+}
+
+.marginTopDefault{
+    margin-top: var(--marginH);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /*geral*/
 .geralDiv {
@@ -48,6 +62,10 @@ header{
     height: var(--topDiv);
 }
 
+.topDiv p{
+    font-weight: 700;
+}
+
 
 
 /*header*/
@@ -62,7 +80,7 @@ header{
 }
 
 .menuHeader img{
-    height: 1.3vw;
+    height: calc(30px + 0.2vw);
 }
 
 #closeMenu {
@@ -75,7 +93,6 @@ header{
 
 #menuItems li {
     list-style-type: none;
-    font-size: calc(11px + 0.3vw);
 }
 
 #menuItems {
@@ -88,6 +105,10 @@ header{
 #menuItems.show {
     display: block; 
     opacity: 1;
+}
+
+.selected{
+    font-weight: 700;
 }
 
 
@@ -128,6 +149,3 @@ footer{
     min-width: 20%;
 }
 
-.footerContent p{
-font-size: calc(10px + 0.2vw);
-}

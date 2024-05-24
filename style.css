@@ -17,15 +17,16 @@
     font-weight: 500;
 }
 
-p , li{
+p,
+li {
     font-size: calc(12px + 0.2vw);
 }
 
-.marginTopDefault{
+.marginTopDefault {
     margin-top: var(--marginH);
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -41,11 +42,11 @@ a{
 
 .lateralDiv {
     width: 30%;
-   height:calc(100vh - var(--marginH)*2);
+    height: calc(100vh - var(--marginH)*2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: -webkit-sticky; 
+    position: -webkit-sticky;
     position: sticky;
     top: var(--marginH);
 }
@@ -54,32 +55,32 @@ a{
     width: 68%;
 }
 
-.topDiv{
+.topDiv {
     height: 15vh;
 }
 
-header{
+header {
     height: var(--topDiv);
 }
 
-.topDiv p{
+.topDiv p {
     font-weight: 700;
 }
 
 
 
 /*header*/
-.menuIcon{
+.menuIcon {
     width: 3vw;
     display: flex;
     justify-content: center;
 }
 
-.menuHeader{
+.menuHeader {
     display: flex;
 }
 
-.menuHeader img{
+.menuHeader img {
     height: calc(20px + 0.3vw);
 }
 
@@ -87,19 +88,24 @@ header{
     display: none;
 }
 
-#logoHeader img{
+#logoHeader {
+    display: grid;
+}
+
+#logoHeader img {
     width: 70%;
 }
+
 
 #menuItems li {
     list-style-type: none;
     margin-left: 0vw;
-    transition:  margin-left 0.5s;
+    transition: margin-left 0.5s;
 }
 
-#menuItems li:hover{
+#menuItems li:hover {
     margin-left: 1vw;
-    transition:  margin-left 0.5s;
+    transition: margin-left 0.5s;
 }
 
 #menuItems {
@@ -110,26 +116,30 @@ header{
 }
 
 #menuItems.show {
-    display: block; 
+    display: block;
     opacity: 1;
 }
 
-.selected{
+.selected {
     font-weight: 700;
 }
 
+#logoPart1 {
+    transition: transform 0.1s linear;
+    width: calc(70% / 2.5) !important;
+}
 
 
 
 
 /*index*/
-.imageIndex img{
+.imageIndex img {
     width: 100%;
     height: calc(100vh - var(--topDiv) - var(--marginH)*2);
     object-fit: cover;
 }
 
-.test{
+.test {
     margin-top: var(--marginH)
 }
 
@@ -137,22 +147,22 @@ header{
 
 
 /*footer*/
-footer{
+footer {
     background-color: var(--footer);
     color: white
 }
 
-#logoFooter{
-    width:15vw;
-} 
-.footerContent{
+#logoFooter {
+    width: 13vw;
+}
+
+.footerContent {
     display: flex;
-    padding: calc(var(--marginH)/2) var(--marginH);
+    padding: var(--marginH);
     justify-content: space-between;
     align-items: flex-end
 }
 
-.footerContent div{
+.footerContent div {
     min-width: 20%;
 }
-

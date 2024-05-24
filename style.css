@@ -93,6 +93,13 @@ header{
 
 #menuItems li {
     list-style-type: none;
+    margin-left: 0vw;
+    transition:  margin-left 0.5s;
+}
+
+#menuItems li:hover{
+    margin-left: 1vw;
+    transition:  margin-left 0.5s;
 }
 
 #menuItems {

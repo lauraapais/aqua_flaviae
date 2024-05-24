@@ -129,6 +129,10 @@ header {
     width: calc(70% / 2.5) !important;
 }
 
+#logoEstatico{
+    width:65%;
+}
+
 
 
 

@@ -22,13 +22,40 @@ li {
     font-size: calc(12px + 0.2vw);
 }
 
-.marginTopDefault {
-    margin-top: var(--marginH);
+h1{
+    font-size: calc(30px + 0.2vw);
+    font-weight: 700;
 }
+
 
 a {
     text-decoration: none;
     color: black;
+}
+
+.marginTopDefault {
+    margin-top: var(--marginH);
+}
+
+.marginBottomDefault {
+    margin-bottom: var(--marginH);
+}
+
+
+.marginTopDouble {
+    margin-top: calc(var(--marginH) * 2);
+}
+
+.marginBottomDouble {
+    margin-bottom: calc(var(--marginH) * 2);
+}
+
+.marginTopHalf {
+    margin-top: calc(var(--marginH) / 2);
+}
+
+.marginBottomHalf {
+    margin-bottom: calc(var(--marginH) / 2);
 }
 
 
@@ -65,6 +92,14 @@ header {
 
 .topDiv p {
     font-weight: 700;
+}
+
+.textDiv{
+    width:60%;
+}
+
+.section{
+    height: calc(100vh - var(--marginH) * 2);
 }
 
 
@@ -130,7 +165,7 @@ header {
 }
 
 #logoEstatico{
-    width:65%;
+    width:60%!important;
 }
 
 
@@ -146,6 +181,13 @@ header {
 .test {
     margin-top: var(--marginH)
 }
+
+
+/*patrimonio mundial*/
+.imagePatrimonio img{ 
+    height: 40vh!important;
+}
+
 
 
 

@@ -1,0 +1,138 @@
+:root {
+    --marginH: 2vw;
+    --marginHMobile: 6vw;
+    --topDiv: 15vh;
+
+
+    --footer: #1A1A1A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+body {
+  
+}
+
+
+
+/*geral*/
+.geralDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--marginH);
+}
+
+.lateralDiv {
+    width: 30%;
+   height:calc(100vh - var(--marginH)*2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: var(--marginH);
+}
+
+.mainDiv {
+    width: 68%;
+}
+
+.topDiv{
+    height: 15vh;
+}
+
+header{
+    height: var(--topDiv);
+}
+
+
+
+/*header*/
+.menuIcon{
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.menuHeader{
+    display: flex;
+}
+
+.menuHeader img{
+    height: 1vw;
+}
+
+#closeMenu {
+    display: none;
+}
+
+#logoHeader img{
+    width: 60%;
+}
+
+#menuItems li {
+    list-style-type: none;
+    font-size: calc(11px + 0.3vw);
+}
+
+#menuItems {
+    display: block;
+    margin-left: calc(var(--marginH)/2);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#menuItems.show {
+    display: block; 
+    opacity: 1;
+}
+
+
+
+
+
+/*index*/
+.imageIndex img{
+    width: 100%;
+    height: calc(100vh - var(--topDiv) - var(--marginH)*2);
+    object-fit: cover;
+}
+
+.testContent{
+    margin-top: var(--marginH)
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: var(--footer);
+    color: white
+}
+
+#logoFooter{
+    width:13vw;
+} 
+.footerContent{
+    display: flex;
+    padding: calc(var(--marginH)/2) var(--marginH);
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.footerContent div{
+    min-width: 20%;
+}
+
+.footerContent p{
+font-size: calc(10px + 0.2vw);
+}

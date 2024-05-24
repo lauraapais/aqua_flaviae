@@ -70,7 +70,7 @@ header{
 
 /*header*/
 .menuIcon{
-    width: 2vw;
+    width: 3vw;
     display: flex;
     justify-content: center;
 }

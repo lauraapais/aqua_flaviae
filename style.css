@@ -188,8 +188,61 @@ header {
     height: 40vh!important;
 }
 
+.agenda{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: var(--marginH);
+}
 
+.agendaH1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.agendaDetails{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agendaArrow{
+    display: flex;
+    align-items: flex-end;
+}
+
+.agendaArrow img{
+    width: 1.5vw;
+}
+
+.news{
+    background-color: #F2F2F2;
+    padding: var(--marginH);
+    width: 42%;
+}
+
+.newsH1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.newsImage{
+    width:100%;
+margin-top:7vw;
+}
+
+.newsImage img{
+    width:100%;
+}
+
+.newsGeneral{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
 /*footer*/

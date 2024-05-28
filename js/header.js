@@ -17,9 +17,14 @@ closeMenu.addEventListener("click", function () {
 
 
 
+let totalRotation = 0;
+
 document.addEventListener('scroll', () => {
     var logo = document.getElementById('logoPart1');
-    var scrollPosition = window.scrollY;
-    var rotation = scrollPosition % 360; 
-    logo.style.transform = `rotate(${rotation}deg)`;
+    var scrollDelta = window.scrollY - lastScrollY; 
+    totalRotation += scrollDelta; 
+    logo.style.transform = `rotate(${totalRotation}deg)`;
+    lastScrollY = window.scrollY;
 });
+
+let lastScrollY = window.scrollY;

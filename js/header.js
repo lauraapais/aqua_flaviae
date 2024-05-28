@@ -16,7 +16,7 @@ closeMenu.addEventListener("click", function () {
 });
 
 
-
+/*
 let totalRotation = 0;
 
 document.addEventListener('scroll', () => {
@@ -28,3 +28,4 @@ document.addEventListener('scroll', () => {
 });
 
 let lastScrollY = window.scrollY;
+*/

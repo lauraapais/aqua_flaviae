@@ -4,7 +4,7 @@
     --topDiv: 15vh;
 
 
-    --footer: #1A1A1A;
+    --black: #212121;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -19,11 +19,11 @@
 
 p,
 li {
-    font-size: calc(12px + 0.2vw);
+    font-size: calc(14px + 0.2vw);
 }
 
 h1{
-    font-size: calc(23px + 0.5vw);
+    font-size: calc(23px + 0.2vw);
     font-weight: 700;
 }
 
@@ -79,7 +79,7 @@ a {
 }
 
 .mainDiv {
-    width: 68%;
+    width: 68vw;
 }
 
 .topDiv {
@@ -191,8 +191,9 @@ header {
 .agenda{
     display: flex;
     justify-content: space-between;
-    background-color: #F2F2F2;
-    padding: var(--marginH);
+    border-style: solid;
+    padding: calc(var(--marginH) / 2);
+    border-radius: 20px;
 }
 
 .agendaH1{
@@ -214,13 +215,14 @@ header {
 }
 
 .agendaArrow img{
-    width: 1.5vw;
+    width: 1vw;
 }
 
 .news{
-    background-color: #F2F2F2;
-    padding: var(--marginH);
-    width: 42%;
+    background-color: var(--black);
+    color: white;
+    padding: calc(var(--marginH) / 2);
+    width: 30vw;
 }
 
 .newsH1{
@@ -240,14 +242,15 @@ margin-top:7vw;
 
 .newsGeneral{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    overflow:hidden;
+    gap: calc(var(--marginH)/2);
 }
+
 
 
 /*footer*/
 footer {
-    background-color: var(--footer);
+    background-color: var(--black);
     color: white
 }
 
@@ -268,3 +271,4 @@ footer {
 
 
 @media screen and (max-width:900px) {
+}

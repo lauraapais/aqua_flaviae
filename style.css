@@ -99,7 +99,7 @@ a {
 }
 
 .lateralDiv {
-    width: 30%;
+    width: 25%;
     height: calc(100vh - var(--marginH)*2);
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ a {
 }
 
 .mainDiv {
-    width: 68vw;
+    width: 73%;
 }
 
 .topDiv {

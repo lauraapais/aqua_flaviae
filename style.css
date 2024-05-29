@@ -2,7 +2,7 @@
     --marginH: 2vw;
     --marginHMobile: 6vw;
     --topDiv: 15vh;
-    --topDivMobile: 8vh;
+    --topDivMobile: 15vh;
     --borderRadius: 20px;
     --headerHeightMobile:18vh;
 
@@ -435,6 +435,9 @@ footer {
 
     .topDiv {
         height: var(--topDivMobile);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .imageIndex img {

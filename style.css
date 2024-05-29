@@ -4,7 +4,7 @@
     --topDiv: 15vh;
     --topDivMobile: 15vh;
     --borderRadius: 20px;
-    --headerHeightMobile:18vh;
+    --headerHeightMobile:13vh;
 
 
     --black: #212121;
@@ -406,6 +406,10 @@ footer {
 
 
 @media screen and (max-width:900px) {
+
+    p, .button {
+        font-size: calc(13px + 0.2vw);
+    } 
     .geralDiv {
         display: inline;
         margin: 0;
@@ -450,5 +454,6 @@ footer {
     width: auto !important;
     height: 100%;
     }
+
 
 }

@@ -37,7 +37,7 @@ li, .button{
 }
 
 h1 {
-    font-size: calc(28px + 0.2vw);
+    font-size: calc(27px + 0.2vw);
     font-weight: 700;
 }
 
@@ -164,7 +164,7 @@ header {
     height: calc(var(--marginH)/2)
 }
 
-#closeMenu {
+#closeMenuDesktop {
     display: none;
 }
 
@@ -455,5 +455,12 @@ footer {
     height: 100%;
     }
 
+    #menuIconDesktop{
+        display: none;
+    }
+
+    #closeMenuDesktop{
+        display: none;
+    }
 
 }

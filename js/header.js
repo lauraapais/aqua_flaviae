@@ -1,7 +1,7 @@
 var menuIcon = document.getElementById("menuIcon");
 var menuItems = document.getElementById("menuItems");
-var closeMenu = document.getElementById("closeMenu");
-var openMenu = document.getElementById("openMenu");
+var closeMenu = document.getElementById("closeMenuDesktop");
+var openMenu = document.getElementById("openMenuDesktop");
 
 openMenu.addEventListener("click", function () {
     menuItems.classList.add("show");
@@ -14,18 +14,3 @@ closeMenu.addEventListener("click", function () {
     openMenu.style.display = "block";
     closeMenu.style.display = "none";
 });
-
-
-/*
-let totalRotation = 0;
-
-document.addEventListener('scroll', () => {
-    var logo = document.getElementById('logoPart1');
-    var scrollDelta = window.scrollY - lastScrollY; 
-    totalRotation += scrollDelta; 
-    logo.style.transform = `rotate(${totalRotation}deg)`;
-    lastScrollY = window.scrollY;
-});
-
-let lastScrollY = window.scrollY;
-*/

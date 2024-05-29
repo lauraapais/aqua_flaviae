@@ -222,6 +222,8 @@ header {
 .agenda {
     display: flex;
     justify-content: space-between;
+    border-color: black;
+    border-width: 1px;
     border-style: solid;
     padding: calc(var(--marginH));
     border-radius: var(--borderRadius);
@@ -306,6 +308,8 @@ header {
 .visitaDiv {
     display: flex;
     justify-content: space-between;
+    border-color: black;
+    border-width: 1px;
     border-style: solid;
     padding: calc(var(--marginH));
     border-radius: var(--borderRadius);
@@ -327,8 +331,9 @@ header {
 
 .button {
     background-color: white; 
-    border: black;
     color: black;
+    border-color: black;
+    border-width: 1px;
     border-style: solid;
     padding: calc(var(--borderRadius)* 0.6) calc(var(--borderRadius)* 1.8);
     text-align: center;

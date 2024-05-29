@@ -89,6 +89,13 @@ a {
     margin-bottom: calc(var(--marginH) / 2);
 }
 
+.marginTopTriple {
+    margin-top: calc(var(--marginH) *3);
+}
+
+.marginBottomTriple {
+    margin-bottom: calc(var(--marginH) *3);
+}
 
 
 /*geral*/
@@ -274,7 +281,7 @@ header {
     background-color: var(--black);
     color: white;
     padding: calc(var(--marginH));
-    width: 20vw;
+    width: 18vw;
     flex: 0 0 auto;
     border-radius: var(--borderRadius);
 }
@@ -291,7 +298,7 @@ header {
 }
 
 .newsImage {
-    margin-top: 5vw;
+    margin-top: calc(var(--marginH)*2);
 
     max-width: 100%;
     overflow: hidden;

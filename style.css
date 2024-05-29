@@ -2,7 +2,9 @@
     --marginH: 2vw;
     --marginHMobile: 6vw;
     --topDiv: 15vh;
+    --topDivMobile: 8vh;
     --borderRadius: 20px;
+    --headerHeightMobile:15vh;
 
 
     --black: #212121;
@@ -114,7 +116,7 @@ a {
 }
 
 .topDiv {
-    height: 15vh;
+    height: var(--topDiv);
 }
 
 header {
@@ -391,7 +393,7 @@ footer {
 
     .lateralDiv{
         width: calc(100vw - var(--marginHMobile)* 2);
-        height: calc(10vh - var(--marginH)* 2);
+        height: var(--headerHeightMobile);
         display: flex;
         flex-direction: row-reverse;
         padding: var(--marginHMobile);
@@ -407,19 +409,22 @@ footer {
     }
 
     .menuHeader img {
-        height: calc(var(--marginHMobile) / 2);
+        height: calc(var(--marginHMobile)* 0.7);
     }
 
-    .topDiv{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .topDiv {
+        height: var(--topDivMobile);
     }
 
     .imageIndex img {
         width: 100%;
-        height: calc(100vh - var(--topDiv) - var(--marginHMobile)* 2);
+        height: calc(var(--vh, 1h) * 100 - var(--marginHMobile)*4 - var(--topDivMobile) - var(--headerHeightMobile));
         object-fit: cover;
+    }
+
+    #logoEstatico{
+    width: auto !important;
+    height: 100%;
     }
 
 }

@@ -412,7 +412,7 @@ footer {
     }
     
     h2 {
-        font-size: calc(20px + 0.2vw);
+        font-size: calc(17px + 0.2vw);
         font-weight: 700;
     }
 
@@ -540,6 +540,10 @@ footer {
 
     .agendaDetails p{
         display: none;
+    }
+
+    .agendaH1 h2:first-child{
+        margin-bottom: calc(var(--marginHMobile) / 2);
     }
     
 }

@@ -94,13 +94,6 @@ a {
     margin-bottom: calc(var(--marginH) / 2);
 }
 
-.marginTopTriple {
-    margin-top: calc(var(--marginH) *3);
-}
-
-.marginBottomTriple {
-    margin-bottom: calc(var(--marginH) *3);
-}
 
 
 /*geral*/
@@ -408,15 +401,69 @@ footer {
 
 @media screen and (max-width:900px) {
 
+    /*geral*/
     p, .button {
         font-size: calc(13px + 0.2vw);
     } 
+
+    h1 {
+        font-size: calc(23px + 0.2vw);
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: calc(20px + 0.2vw);
+        font-weight: 700;
+    }
+
+    
+    h3 {
+        font-size: calc(18px + 0.2vw);
+        font-weight: 700;
+    }
+
     .geralDiv {
         display: inline;
         margin: 0;
         padding: 0;
     }
 
+    #menuIconDesktop{
+        display: none;
+    }
+
+    #closeMenuDesktop{
+        display: none;
+    }
+
+    .marginTopDefault {
+        margin-top: var(--marginHMobile);
+    }
+    
+    .marginBottomDefault {
+        margin-bottom: var(--marginHMobile);
+    }
+    
+    
+    .marginTopDouble {
+        margin-top: calc(var(--marginHMobile) * 2);
+    }
+    
+    .marginBottomDouble {
+        margin-bottom: calc(var(--marginHMobile) * 2);
+    }
+    
+    .marginTopHalf {
+        margin-top: calc(var(--marginHMobile) / 2);
+    }
+    
+    .marginBottomHalf {
+        margin-bottom: calc(var(--marginHMobile) / 2);
+    }
+
+
+
+     /*index*/
     .lateralDiv{
         width: calc(100vw - var(--marginHMobile)* 2);
         height: var(--headerHeightMobile);
@@ -456,12 +503,33 @@ footer {
     height: 100%;
     }
 
-    #menuIconDesktop{
-        display: none;
+
+    .agenda{
+        flex-direction: column;
+        padding: var(--marginHMobile);
+        margin-bottom: var(--marginHMobile);
+    }
+    
+    .agendaH1 {
+        width:100%;
+        margin-bottom: var(--marginHMobile);
     }
 
-    #closeMenuDesktop{
-        display: none;
+    .agendaDetails {
+        width: 100%;
+        display: block;
     }
 
+    .agendaArrow img{
+        width: 4vw;
+    }
+
+    .agendaArrow{
+        display: flex;
+    align-items: flex-end;
+    margin-left: calc(var(--marginH));
+    justify-content: flex-end;
+    margin-top: var(--marginHMobile);
+    }
+    
 }

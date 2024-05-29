@@ -138,6 +138,9 @@ header {
 
 .section {
     height: calc(100vh - var(--marginH) * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -208,7 +211,17 @@ header {
 
 /*patrimonio mundial*/
 .imagePatrimonio img {
-    height: 40vh !important;
+    height: 50vh !important;
+}
+
+.imagePatrimonio2 img {
+    width:60%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.marginPatrimonio{
+    margin-top:15vh;
 }
 
 
@@ -525,6 +538,8 @@ footer {
         width: 4vw;
     }
 
+    
+
     .agendaArrow{
         display: flex;
     align-items: flex-end;
@@ -544,6 +559,22 @@ footer {
 
     .agendaH1 h2:first-child{
         margin-bottom: calc(var(--marginHMobile) / 2);
+    }
+
+
+    .news {
+        padding: var(--marginHMobile);
+        width: 50vw;
+    }
+
+    .newsImage img {
+        height: 40vw;
+        width: 100%;
+        margin-top: var(--marginHMobile);;
+    }
+
+    .arrowScroll img {
+        display: none;
     }
     
 }

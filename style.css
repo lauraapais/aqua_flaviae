@@ -99,7 +99,7 @@ a {
 }
 
 .lateralDiv {
-    width: 25%;
+    width: 30%;
     height: calc(100vh - var(--marginH)*2);
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ a {
 }
 
 .mainDiv {
-    width: 73%;
+    width: 68%;
 }
 
 .topDiv {
@@ -161,7 +161,7 @@ header {
 }
 
 #logoHeader img {
-    width: 70%;
+    width: 60%;
 }
 
 #menuItems li {
@@ -197,7 +197,7 @@ header {
 }
 
 #logoEstatico {
-    width: 70% !important;
+    width: 60% !important;
 }
 
 

@@ -506,6 +506,7 @@ footer {
 
     .agenda{
         flex-direction: column;
+        width: 65%;
         padding: var(--marginHMobile);
         margin-bottom: var(--marginHMobile);
     }
@@ -530,6 +531,12 @@ footer {
     margin-left: calc(var(--marginH));
     justify-content: flex-end;
     margin-top: var(--marginHMobile);
+    }
+
+    .agendaGeneral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
 }

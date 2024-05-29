@@ -31,6 +31,11 @@ li, .button{
     font-size: calc(14px + 0.2vw);
 }
 
+
+.newsDetails p{
+    font-size: calc(12px + 0.2vw);
+}
+
 h1 {
     font-size: calc(28px + 0.2vw);
     font-weight: 700;

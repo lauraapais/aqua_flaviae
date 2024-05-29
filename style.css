@@ -577,4 +577,14 @@ footer {
         display: none;
     }
     
+    .visitaDiv{
+        height: fit-content;
+        padding: calc(var(--marginHMobile));
+        flex-direction: column;
+    }
+
+    .buttonVisitDiv{
+        margin-top:calc(var(--marginHMobile)/2);
+        justify-content: flex-end;
+    }
 }

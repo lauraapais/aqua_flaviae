@@ -37,12 +37,12 @@ li, .button{
 }
 
 h1 {
-    font-size: calc(27px + 0.2vw);
+    font-size: calc(25px + 0.2vw);
     font-weight: 700;
 }
 
 h2 {
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(15px + 0.5vw);
     font-weight: 700;
 }
 
@@ -257,12 +257,13 @@ header {
 .agendaDetails {
     width: 65%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .agendaArrow {
     display: flex;
     align-items: flex-end;
+    margin-left: calc(var(--marginH));
 }
 
 .agendaArrow img {

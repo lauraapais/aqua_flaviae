@@ -2,9 +2,12 @@
     --marginH: 2vw;
     --marginHMobile: 6vw;
     --topDiv: 15vh;
+    --borderRadius: 20px;
 
 
     --black: #212121;
+    --grey: #E2E2E2;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -17,18 +20,40 @@
     font-weight: 500;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 p,
-li {
+li, .button{
     font-size: calc(14px + 0.2vw);
 }
 
 h1 {
+    font-size: calc(28px + 0.2vw);
+    font-weight: 700;
+}
+
+h2 {
     font-size: calc(23px + 0.2vw);
     font-weight: 700;
+}
+
+h3 {
+    font-size: calc(18px + 0.2vw);
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+::-moz-selection {
+    background: var(--grey);
+}
+
+::selection {
+    background: var(--grey);
 }
 
 
@@ -80,6 +105,8 @@ a {
     position: -webkit-sticky;
     position: sticky;
     top: var(--marginH);
+    background-color: white;
+    z-index: 2;
 }
 
 .mainDiv {
@@ -120,7 +147,7 @@ header {
 }
 
 .menuHeader img {
-    height: calc(20px + 0.3vw);
+    height: calc(var(--marginH)/2)
 }
 
 #closeMenu {
@@ -172,6 +199,10 @@ header {
 }
 
 
+/*patrimonio mundial*/
+.imagePatrimonio img {
+    height: 40vh !important;
+}
 
 
 /*index*/
@@ -186,18 +217,18 @@ header {
 }
 
 
-/*patrimonio mundial*/
-.imagePatrimonio img {
-    height: 40vh !important;
-}
-
 .agenda {
     display: flex;
     justify-content: space-between;
-    background-color: #F2F2F2;
-    /*border-style: solid;*/
-    padding: calc(var(--marginH) );
-    border-radius: 20px;
+    border-style: solid;
+    padding: calc(var(--marginH));
+    border-radius: var(--borderRadius);
+    transition: background-color 0.5s;
+}
+
+.agenda:hover{
+    background-color: var(--grey);
+    cursor: pointer;
 }
 
 .agendaH1 {
@@ -222,12 +253,31 @@ header {
     width: 1vw;
 }
 
+.newsGeneral {
+    display: inline-flex;
+    gap: calc(var(--marginH) / 2);
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .news {
+    user-select: none;
     background-color: var(--black);
     color: white;
-    padding: calc(var(--marginH) );
-    width: 18vw;
-    border-radius: 20px;
+    padding: calc(var(--marginH));
+    width: 20vw;
+    flex: 0 0 auto;
+    border-radius: var(--borderRadius);
+}
+
+
+.newsGeneral:active {
+    cursor: grabbing;
 }
 
 .newsH1 {
@@ -237,24 +287,76 @@ header {
 }
 
 .newsImage {
-    width: 100%;
-    margin-top: 7vw;
+    margin-top: 5vw;
+
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .newsImage img {
-    width: 100%;
+    height: 15vw;
+    width: auto;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
 }
 
-.newsGeneral {
-    display: inline-flex;
-    gap: calc(var(--marginH) / 2);
-    overflow: auto;
-    white-space: nowrap;
+.visitaDiv {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    padding: calc(var(--marginH));
+    border-radius: var(--borderRadius);
+    height: 5vw;
 }
+
 
 .news p {
     text-wrap: wrap;
 }
+
+.newsH1Title {
+    width: 80%
+}
+
+.newsH1Title h1 {
+    text-wrap: wrap;
+}
+
+.button {
+    background-color: white; 
+    border: black;
+    color: black;
+    border-style: solid;
+    padding: calc(var(--borderRadius)* 0.6) calc(var(--borderRadius)* 1.8);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+    transition: background-color 1s;
+  }
+
+  .button:hover{
+    background-color: var(--grey);
+    cursor: pointer;
+  }
+
+  .buttonVisitDiv{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .arrowScroll img{
+    width: 1.5vw;
+  }
+
+.arrowScroll{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 
@@ -280,4 +382,44 @@ footer {
 }
 
 
-@media screen and (max-width:900px) {}
+@media screen and (max-width:900px) {
+    .geralDiv {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lateralDiv{
+        width: calc(100vw - var(--marginHMobile)* 2);
+        height: calc(10vh - var(--marginH)* 2);
+        display: flex;
+        flex-direction: row-reverse;
+        padding: var(--marginHMobile);
+    }
+
+    .mainDiv {
+        width: calc(100vw - var(--marginHMobile)* 2);
+        padding: var(--marginHMobile);
+    }
+    
+    #menuItems{
+        display: none;
+    }
+
+    .menuHeader img {
+        height: calc(var(--marginHMobile) / 2);
+    }
+
+    .topDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imageIndex img {
+        width: 100%;
+        height: calc(100vh - var(--topDiv) - var(--marginHMobile)* 2);
+        object-fit: cover;
+    }
+
+}

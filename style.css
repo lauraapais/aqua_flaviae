@@ -171,6 +171,10 @@ header {
     justify-content: center;
 }
 
+#menuIconMobile{
+display: none;
+}
+
 .menuHeader {
     display: flex;
 }
@@ -191,25 +195,25 @@ header {
     width: 60%;
 }
 
-#menuItems li {
+#menuItemsDesktop li {
     list-style-type: none;
     margin-left: 0vw;
     transition: margin-left 0.5s;
 }
 
-#menuItems li:hover {
+#menuItemsDesktop li:hover {
     margin-left: 1vw;
     transition: margin-left 0.5s;
 }
 
-#menuItems {
+#menuItemsDesktop {
     display: block;
     margin-left: calc(var(--marginH)/4);
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-#menuItems.show {
+#menuItemsDesktop.show {
     display: block;
     opacity: 1;
 }
@@ -454,13 +458,20 @@ footer {
         font-weight: 700;
     }
 
-    .geralDiv {
-        display: inline;
-        margin: 0;
-        padding: 0;
+    #menuIconDesktop{
+        display: none;
     }
 
-    #menuIconDesktop{
+    #menuIconMobile{
+        display: block;
+width: calc(var(--marginHMobile));
+    }
+
+    #menuItemsDesktop{
+        display: none;
+    }
+
+    #logoHeader{
         display: none;
     }
 
@@ -496,20 +507,24 @@ footer {
 
 
      /*index*/
-    .lateralDiv{
-        width: calc(100vw - var(--marginHMobile)* 2);
-        height: var(--headerHeightMobile);
-        display: flex;
-        flex-direction: row-reverse;
+     .geralDiv{
         padding: var(--marginHMobile);
+        margin:0;
+     }
+    .lateralDiv{
+       width:20%;
+    }
+
+    .menuItems{
+        display: none;
     }
 
     .mainDiv {
-        width: calc(100vw - var(--marginHMobile)* 2);
-        padding: var(--marginHMobile);
+        width: 80%;
+
     }
     
-    #menuItems{
+    #menuItemsDesktop{
         display: none;
     }
 

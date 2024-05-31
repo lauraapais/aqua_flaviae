@@ -1,5 +1,5 @@
 var menuIcon = document.getElementById("menuIcon");
-var menuItems = document.getElementById("menuItems");
+var menuItems = document.getElementById("menuItemsDesktop");
 var closeMenu = document.getElementById("closeMenuDesktop");
 var openMenu = document.getElementById("openMenuDesktop");
 

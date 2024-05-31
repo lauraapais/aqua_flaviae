@@ -28,26 +28,22 @@ body {
 
 p,
 li, .button{
-    font-size: calc(14px + 0.2vw);
+    font-size: 18pt;
 }
 
-
-.newsDetails p{
-    font-size: calc(12px + 0.2vw);
-}
 
 h1 {
-    font-size: calc(25px + 0.2vw);
+    font-size: 50pt;
     font-weight: 700;
 }
 
 h2 {
-    font-size: calc(15px + 0.5vw);
+    font-size: 40pt;
     font-weight: 700;
 }
 
 h3 {
-    font-size: calc(18px + 0.2vw);
+    font-size: 23pt;
     font-weight: 700;
 }
 
@@ -128,7 +124,7 @@ header {
     height: var(--topDiv);
 }
 
-.topDiv p {
+.topDiv h3 {
     font-weight: 700;
 }
 

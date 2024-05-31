@@ -32,18 +32,22 @@ li, .button{
 }
 
 
+.newsDetails p{
+    font-size: calc(12pt + 0.2vw);
+}
+
 h1 {
-    font-size: calc(40pt + 0.2vw);
+    font-size: calc(27pt + 0.2vw);
     font-weight: 700;
 }
 
 h2 {
-    font-size: calc(30pt + 0.2vw);
+    font-size: calc(23pt + 0.5vw);
     font-weight: 700;
 }
 
 h3 {
-    font-size: calc(23pt + 0.2vw);
+    font-size: calc(18pt + 0.2vw);
     font-weight: 700;
 }
 
@@ -124,7 +128,7 @@ header {
     height: var(--topDiv);
 }
 
-.topDiv h3 {
+.topDiv p {
     font-weight: 700;
 }
 

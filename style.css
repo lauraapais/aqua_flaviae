@@ -28,22 +28,22 @@ body {
 
 p,
 li, .button{
-    font-size: 18pt;
+    font-size: calc(14pt + 0.2vw);
 }
 
 
 h1 {
-    font-size: 50pt;
+    font-size: calc(40pt + 0.2vw);
     font-weight: 700;
 }
 
 h2 {
-    font-size: 40pt;
+    font-size: calc(30pt + 0.2vw);
     font-weight: 700;
 }
 
 h3 {
-    font-size: 23pt;
+    font-size: calc(23pt + 0.2vw);
     font-weight: 700;
 }
 

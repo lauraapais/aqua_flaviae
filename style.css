@@ -12,14 +12,23 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+  font-display: swap;
+}
+
 
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
 }
 
 body {
@@ -64,7 +73,7 @@ h3 {
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: 700!important;
 }
 
 ::-moz-selection {
@@ -157,7 +166,7 @@ header {
 }
 
 .textDiv {
-    width: 60%;
+    width: 50%;
 }
 
 .section {
@@ -247,18 +256,47 @@ header {
 /*patrimonio mundial*/
 .imagePatrimonio img {
     height: 50vh !important;
+    border-radius: var(--borderRadius);
 }
 
-.imagePatrimonio2 img {
-    width: 60%;
-    height: 50vh;
+.imagePatrimonio75{
+    width:calc(75% - var(--marginH)/2);
     object-fit: cover;
+    border-radius: var(--borderRadius);
 }
 
 .marginPatrimonio {
     margin-top: 15vh;
 }
 
+.section50{
+ display: flex;
+    justify-content: space-between;
+}
+
+.section50 .imageSection, .section50 .textDiv{
+    width:calc(50% - var(--marginH)/2);
+}
+
+.imagePatrimonio50{
+    width:100%;
+    border-radius: var(--borderRadius);
+}
+
+.section50 h3{
+    font-weight: 500;
+}
+
+.seeMore{
+    text-decoration: underline;
+}
+
+
+.section50 .textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /*index*/
 .imageIndex img {
@@ -586,7 +624,7 @@ footer {
     .mainDiv {
         width: 70%;
         padding: var(--marginHMobile);
-
+overflow-x: hidden;
 
     }
 

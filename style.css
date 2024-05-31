@@ -4,7 +4,7 @@
     --topDiv: 15vh;
     --topDivMobile: 10vh;
     --borderRadius: 10px;
-    --headerHeightMobile:15vh;
+    --headerHeightMobile: 15vh;
 
 
     --black: #212121;
@@ -27,38 +27,39 @@ body {
 }
 
 p,
-li, .button{
-    font-size: calc(12px +  0.390625vw);
+li,
+.button {
+    font-size: calc(12px + 0.390625vw);
 }
 
-.button{
-    font-size: calc(10px +  0.390625vw);
+.button {
+    font-size: calc(10px + 0.390625vw);
 }
 
-.newsDetails p{
-    font-size: calc(10px +  0.390625vw);
+.newsDetails p {
+    font-size: calc(10px + 0.390625vw);
 }
 
-footer p{
-    font-size: calc(10px +  0.390625vw);
+footer p {
+    font-size: calc(10px + 0.390625vw);
 }
 
 h1 {
-    font-size: calc(35px +  0.390625vw);
+    font-size: calc(35px + 0.390625vw);
     font-weight: 700;
 }
 
 h2 {
-    font-size: calc(28px +  0.390625vw);
+    font-size: calc(28px + 0.390625vw);
     font-weight: 700;
 }
 
 h3 {
-    font-size: calc(18px +  0.390625vw);
+    font-size: calc(18px + 0.390625vw);
     font-weight: 700;
 }
 
-.borderRadius{
+.borderRadius {
     border-radius: var(--borderRadius);
 }
 
@@ -171,8 +172,8 @@ header {
     justify-content: center;
 }
 
-#menuIconMobile{
-display: none;
+#menuIconMobile {
+    display: none;
 }
 
 .menuHeader {
@@ -196,7 +197,7 @@ display: none;
 }
 
 
-#logoHeaderMobile{
+#logoHeaderMobile {
     display: none;
 }
 
@@ -234,7 +235,7 @@ display: none;
 
 #logoEstatico {
     width: auto;
-    height: 12vw !important;
+    height: 12vw;
 }
 
 
@@ -244,13 +245,13 @@ display: none;
 }
 
 .imagePatrimonio2 img {
-    width:60%;
+    width: 60%;
     height: 50vh;
     object-fit: cover;
 }
 
-.marginPatrimonio{
-    margin-top:15vh;
+.marginPatrimonio {
+    margin-top: 15vh;
 }
 
 
@@ -277,7 +278,7 @@ display: none;
     transition: background-color 0.5s;
 }
 
-.agenda:hover{
+.agenda:hover {
     background-color: var(--grey);
     cursor: pointer;
 }
@@ -378,7 +379,7 @@ display: none;
 }
 
 .button {
-    background-color: white; 
+    background-color: white;
     color: black;
     border-color: black;
     border-width: 1px;
@@ -389,29 +390,29 @@ display: none;
     border-radius: 100px;
     display: inline-block;
     transition: background-color 1s;
-  }
+}
 
-  .button:hover{
+.button:hover {
     background-color: var(--grey);
     cursor: pointer;
-  }
+}
 
-  .buttonVisitDiv{
+.buttonVisitDiv {
     display: flex;
     align-items: flex-end;
-  }
+}
 
-  .arrowScroll img{
+.arrowScroll img {
     width: 1.5vw;
-  }
+}
 
-.arrowScroll{
+.arrowScroll {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.arrowScroll img{
+.arrowScroll img {
     cursor: pointer;
 }
 
@@ -423,10 +424,11 @@ display: none;
 footer {
     background-color: var(--black);
     color: white;
-    min-height: calc(12vw + var(--marginH) *2) ;
+    min-height: calc(12vw + var(--marginH) *2);
 }
 
 #logoFooter {
+    display: none;
     width: 13vw;
 }
 
@@ -435,7 +437,7 @@ footer {
     padding: var(--marginH);
     justify-content: space-between;
     align-items: flex-end;
-    min-height: calc(12vw + var(--marginH)) ;
+    min-height: calc(12vw + var(--marginH));
 }
 
 .footerContent div {
@@ -446,55 +448,66 @@ footer {
 @media screen and (max-width:900px) {
 
     /*geral*/
-    p, .button {
+    p,
+    .button {
         font-size: calc(13px + 0.2vw);
-    } 
+    }
 
     h1 {
         font-size: calc(23px + 0.2vw);
         font-weight: 700;
     }
-    
+
     h2 {
         font-size: calc(17px + 0.2vw);
         font-weight: 700;
     }
 
-    
+
     h3 {
         font-size: calc(18px + 0.2vw);
         font-weight: 700;
     }
 
-    #menuIconDesktop{
+    #menuIconDesktop {
         display: none;
     }
 
-    #menuIconMobile{
+    #menuIconMobile {
         display: block;
-width: calc(var(--marginHMobile));
+        width: calc(var(--marginHMobile));
     }
 
-    footer{
-        z-index:100;
+    footer {
+        z-index: 100;
         position: relative;
-        min-height: 12vh!important;
+        min-height: 12vh !important;
         padding: var(--marginHMobile);
     }
 
-    #menuItemsDesktop{
+    #logoFooter{
+        height: 12vh;
+        display: block;
+        width: auto;
+    }
+
+    .noneMobile{
         display: none;
     }
 
-    #logoHeader{
+    #menuItemsDesktop {
         display: none;
     }
 
-    #logoHeaderMobile{
+    #logoHeader {
+        display: none;
+    }
+
+    #logoHeaderMobile {
         background-color: white;
         height: 12vh;
         display: block;
-        width:100%;
+        width: 100%;
         position: fixed;
         z-index: 3;
         padding: var(--marginHMobile);
@@ -504,48 +517,59 @@ width: calc(var(--marginHMobile));
         top: auto;
     }
 
-    #closeMenuDesktop{
+    #closeMenuDesktop {
         display: none;
     }
 
     .marginTopDefault {
         margin-top: var(--marginHMobile);
     }
-    
+
     .marginBottomDefault {
         margin-bottom: var(--marginHMobile);
     }
-    
-    
+
+
     .marginTopDouble {
         margin-top: calc(var(--marginHMobile) * 2);
     }
-    
+
     .marginBottomDouble {
         margin-bottom: calc(var(--marginHMobile) * 2);
     }
-    
+
     .marginTopHalf {
         margin-top: calc(var(--marginHMobile) / 2);
     }
-    
+
     .marginBottomHalf {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
 
-
-
-     /*index*/
-     .geralDiv{
-        padding: 0;
-        margin:0;
-     }
-    .lateralDiv{
-       width:18%;
-       padding: var(--marginHMobile);
+    .footerContent {
+        align-items: flex-start;
+        margin-top: 6vw;
+        align-items: flex-start;
+        margin-top: var(--marginHMobile);
+        gap: var(--marginHMobile);
     }
 
-    .menuItems{
+
+
+
+
+    /*index*/
+    .geralDiv {
+        padding: 0;
+        margin: 0;
+    }
+
+    .lateralDiv {
+        width: 18%;
+        padding: var(--marginHMobile);
+    }
+
+    .menuItems {
         display: none;
     }
 
@@ -555,8 +579,8 @@ width: calc(var(--marginHMobile));
 
 
     }
-    
-    #menuItemsDesktop{
+
+    #menuItemsDesktop {
         display: none;
     }
 
@@ -576,21 +600,21 @@ width: calc(var(--marginHMobile));
         object-fit: cover;
     }
 
-    #logoEstatico{
-    width: auto !important;
-    height: 100%;
+    #logoEstatico {
+        width: auto !important;
+        height: 100%;
     }
 
 
-    .agenda{
+    .agenda {
         flex-direction: column;
         width: 65%;
         padding: var(--marginHMobile);
         margin-bottom: var(--marginHMobile);
     }
-    
+
     .agendaH1 {
-        width:100%;
+        width: 100%;
         margin-bottom: var(--marginHMobile);
     }
 
@@ -599,30 +623,30 @@ width: calc(var(--marginHMobile));
         display: block;
     }
 
-    .agendaArrow img{
+    .agendaArrow img {
         width: 4vw;
     }
 
-    
 
-    .agendaArrow{
+
+    .agendaArrow {
         display: flex;
-    align-items: flex-end;
-    margin-left: calc(var(--marginH));
-    justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: calc(var(--marginH));
+        justify-content: flex-end;
     }
 
-    .agendaGeneral{
+    .agendaGeneral {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .agendaDetails p{
+    .agendaDetails p {
         display: none;
     }
 
-    .agendaH1 h2:first-child{
+    .agendaH1 h2:first-child {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
 
@@ -635,21 +659,22 @@ width: calc(var(--marginHMobile));
     .newsImage img {
         height: 40vw;
         width: 100%;
-        margin-top: var(--marginHMobile);;
+        margin-top: var(--marginHMobile);
+        ;
     }
 
     .arrowScroll img {
         display: none;
     }
-    
-    .visitaDiv{
+
+    .visitaDiv {
         height: fit-content;
         padding: calc(var(--marginHMobile));
         flex-direction: column;
     }
 
-    .buttonVisitDiv{
-        margin-top:calc(var(--marginHMobile)/2);
+    .buttonVisitDiv {
+        margin-top: calc(var(--marginHMobile)/2);
         justify-content: flex-end;
     }
 }

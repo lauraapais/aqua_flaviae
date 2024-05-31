@@ -16,3 +16,20 @@ closeMenu.addEventListener("click", function () {
 });
 
 
+    const logoHeader = document.getElementById('logoEstatico');
+    const footer = document.getElementById('footer');
+
+    function checkOverlap() {
+        const logoRect = logoHeader.getBoundingClientRect();
+        const footerRect = footer.getBoundingClientRect();
+
+        if (logoRect.bottom > footerRect.top && logoRect.top < footerRect.bottom) {
+            logoHeader.classList.add('logoDifferent');
+        } else {
+            logoHeader.classList.remove('logoDifferent');
+        }
+    }
+
+    window.addEventListener('scroll', checkOverlap);
+    window.addEventListener('resize', checkOverlap);
+    checkOverlap(); 

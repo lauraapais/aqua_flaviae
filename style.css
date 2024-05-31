@@ -177,6 +177,7 @@ display: none;
 
 .menuHeader {
     display: flex;
+    position: fixed;
 }
 
 .menuHeader img {
@@ -189,11 +190,11 @@ display: none;
 
 #logoHeader {
     display: grid;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: var(--marginH);
 }
 
-#logoHeader img {
-    width: 60%;
-}
 
 #logoHeaderMobile{
     display: none;
@@ -232,7 +233,8 @@ display: none;
 }
 
 #logoEstatico {
-    width: 16vw !important;
+    width: auto;
+    height: 12vw !important;
 }
 
 
@@ -420,7 +422,8 @@ display: none;
 /*footer*/
 footer {
     background-color: var(--black);
-    color: white
+    color: white;
+    min-height: calc(12vw + var(--marginH) *2) ;
 }
 
 #logoFooter {
@@ -431,7 +434,8 @@ footer {
     display: flex;
     padding: var(--marginH);
     justify-content: space-between;
-    align-items: flex-end
+    align-items: flex-end;
+    min-height: calc(12vw + var(--marginH)) ;
 }
 
 .footerContent div {
@@ -471,6 +475,13 @@ footer {
 width: calc(var(--marginHMobile));
     }
 
+    footer{
+        z-index:100;
+        position: relative;
+        min-height: 12vh!important;
+        padding: var(--marginHMobile);
+    }
+
     #menuItemsDesktop{
         display: none;
     }
@@ -485,10 +496,12 @@ width: calc(var(--marginHMobile));
         display: block;
         width:100%;
         position: fixed;
-        bottom:0; 
         z-index: 3;
         padding: var(--marginHMobile);
-
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
     }
 
     #closeMenuDesktop{

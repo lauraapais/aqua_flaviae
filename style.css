@@ -28,26 +28,26 @@ body {
 
 p,
 li, .button{
-    font-size: calc(14pt + 0.2vw);
+    font-size: calc(13px +  0.390625vw);
 }
 
 
 .newsDetails p{
-    font-size: calc(12pt + 0.2vw);
+    font-size: calc(11px +  0.390625vw);
 }
 
 h1 {
-    font-size: calc(27pt + 0.2vw);
+    font-size: calc(35px +  0.390625vw);
     font-weight: 700;
 }
 
 h2 {
-    font-size: calc(23pt + 0.5vw);
+    font-size: calc(30px +  0.390625vw);
     font-weight: 700;
 }
 
 h3 {
-    font-size: calc(18pt + 0.2vw);
+    font-size: calc(24px +  0.390625vw);
     font-weight: 700;
 }
 
@@ -344,7 +344,7 @@ header {
     width: 80%
 }
 
-.newsH1Title h1 {
+.newsH1Title h3 {
     text-wrap: wrap;
 }
 

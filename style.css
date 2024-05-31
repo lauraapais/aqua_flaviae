@@ -662,6 +662,13 @@ footer {
     }
 
 
+    .agendaGeneral{
+        gap: var(--marginHMobile);
+    }
+
+    .newsGeneral{
+        gap: var(--marginHMobile);
+    }
     .news {
         padding: var(--marginHMobile);
         min-width: 60vw !important;

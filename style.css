@@ -450,22 +450,22 @@ footer {
     /*geral*/
     p,
     .button {
-        font-size: calc(13px + 0.2vw);
+        font-size: calc(15px + 0.390625vw);
     }
 
     h1 {
-        font-size: calc(23px + 0.2vw);
+        font-size: calc(30px + 0.390625vw);
         font-weight: 700;
     }
 
     h2 {
-        font-size: calc(17px + 0.2vw);
+        font-size: calc(25px + 0.390625vw);
         font-weight: 700;
     }
 
 
     h3 {
-        font-size: calc(18px + 0.2vw);
+        font-size: calc(18px + 0.390625vw);
         font-weight: 700;
     }
 
@@ -552,6 +552,7 @@ footer {
         align-items: flex-start;
         margin-top: var(--marginHMobile);
         gap: var(--marginHMobile);
+        flex-direction: column;
     }
 
 

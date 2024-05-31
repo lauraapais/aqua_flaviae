@@ -3,7 +3,7 @@
     --marginHMobile: 6vw;
     --topDiv: 15vh;
     --topDivMobile: 15vh;
-    --borderRadius: 20px;
+    --borderRadius: 10px;
     --headerHeightMobile:15vh;
 
 
@@ -49,6 +49,10 @@ h2 {
 h3 {
     font-size: calc(20px +  0.390625vw);
     font-weight: 700;
+}
+
+.borderRadius{
+    border-radius: var(--borderRadius);
 }
 
 .bold {

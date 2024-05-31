@@ -258,7 +258,7 @@ header {
 /*index*/
 .imageIndex img {
     width: 100%;
-    height: calc(100vh - var(--marginHMobile)* 2 - var(--topDivMobile));
+    height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
     object-fit: cover;
 }
 
@@ -600,8 +600,7 @@ footer {
     }
 
     .imageIndex img {
-        width: 100%;
-        height: 50vh;
+        height: calc(var(--vh, 1h) * 100 - var(--marginHMobile)* 2 - var(--topDivMobile));
         object-fit: cover;
     }
 

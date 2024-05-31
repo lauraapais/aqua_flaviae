@@ -94,6 +94,14 @@ a {
     margin-bottom: calc(var(--marginH) / 2);
 }
 
+.marginTop4 {
+    margin-top: calc(var(--marginH) * 4);
+}
+
+.marginBottom4 {
+    margin-bottom: calc(var(--marginH) * 4);
+}
+
 
 
 /*geral*/
@@ -293,9 +301,9 @@ header {
     background-color: var(--black);
     color: white;
     padding: calc(var(--marginH));
-    width: 18vw;
     flex: 0 0 auto;
     border-radius: var(--borderRadius);
+    width: 20vw;
 }
 
 

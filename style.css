@@ -120,7 +120,6 @@ a {
 .geralDiv {
     display: flex;
     justify-content: space-between;
-    margin: var(--marginH);
 }
 
 .lateralDiv {
@@ -134,10 +133,12 @@ a {
     top: var(--marginH);
     background-color: white;
     z-index: 2;
+    padding: var(--marginH);
 }
 
 .mainDiv {
     width: 68%;
+    padding: var(--marginH);
 }
 
 .topDiv {
@@ -194,6 +195,7 @@ header {
     position: fixed;
     bottom: 0;
     margin-bottom: var(--marginH);
+    mix-blend-mode: difference;
 }
 
 

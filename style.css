@@ -31,8 +31,15 @@ li, .button{
     font-size: calc(12px +  0.390625vw);
 }
 
+.button{
+    font-size: calc(10px +  0.390625vw);
+}
 
 .newsDetails p{
+    font-size: calc(10px +  0.390625vw);
+}
+
+footer p{
     font-size: calc(10px +  0.390625vw);
 }
 

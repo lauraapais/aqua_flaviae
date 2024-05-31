@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(Draggable);
+ gsap.registerPlugin(Draggable);
 
     Draggable.create(".newsGeneral", {
         type: "x",
@@ -9,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const newsContainer = document.querySelector(".newsGeneral");
-    const nextArrow = document.getElementById("nextArrow");
-    const backArrow = document.getElementById("backArrow");
+    const nextArrow = document.getElementById("nextArrowNews");
+    const backArrow = document.getElementById("backArrowNews");
     const newsItemWidth = document.querySelector(".news").offsetWidth;
     const containerWidth = document.querySelector(".newsDiv").offsetWidth;
 
@@ -37,5 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "power2.inOut"
         });
     }
-});
+
+
+
+
+
+
+    Draggable.create(".agendaGeneral", {
+        type: "x",
+        bounds: ".newsDiv",
+        inertia: true,
+        edgeResistance: 0.65
+    });
+
+    const agendaContainer = document.querySelector(".agendaGeneral");
+    const nextAgenda = document.getElementById("nextArrowAgenda");
+    const backAgenda = document.getElementById("backArrowAgenda");
+    const agendaItemWidth = document.querySelector(".agenda").offsetWidth;
+    const containerAgendaWidth = document.querySelector(".agendaDiv").offsetWidth;
 

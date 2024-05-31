@@ -258,7 +258,7 @@ header {
 /*index*/
 .imageIndex img {
     width: 100%;
-    height: calc(100vh - var(--topDiv) - var(--marginH)*2);
+    height: calc(100vh - var(--marginHMobile)* 2 - var(--topDivMobile));
     object-fit: cover;
 }
 
@@ -450,11 +450,11 @@ footer {
     /*geral*/
     p,
     .button {
-        font-size: calc(15px + 0.390625vw);
+        font-size: calc(14px + 0.390625vw);
     }
 
     .newsDetails p {
-        font-size: calc(13px + 0.390625vw);
+        font-size: calc(12px + 0.390625vw);
     }
 
     h1 {
@@ -613,7 +613,7 @@ footer {
 
     .agenda {
         flex-direction: column;
-        min-width: 50vw !important;
+        min-width: 60vw !important;
         padding: var(--marginHMobile);
         margin-bottom: var(--marginHMobile);
     }
@@ -664,7 +664,7 @@ footer {
 
     .news {
         padding: var(--marginHMobile);
-        width: 50vw;
+        min-width: 60vw !important;
     }
 
     .newsImage img {

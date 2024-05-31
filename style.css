@@ -118,7 +118,7 @@ a {
 
 /*geral*/
 .arrowScroll{
-    display: none;
+    display: none!important;
 }
 .geralDiv {
     display: flex;
@@ -133,7 +133,6 @@ a {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
-    top: var(--marginH);
     background-color: white;
     z-index: 2;
     padding: var(--marginH);

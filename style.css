@@ -2,7 +2,7 @@
     --marginH: 2vw;
     --marginHMobile: 6vw;
     --topDiv: 15vh;
-    --topDivMobile: 15vh;
+    --topDivMobile: 10vh;
     --borderRadius: 10px;
     --headerHeightMobile:15vh;
 
@@ -536,12 +536,11 @@ width: calc(var(--marginHMobile));
         height: var(--topDivMobile);
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .imageIndex img {
         width: 100%;
-        height: calc(var(--vh, 1h) * 100 - var(--marginHMobile)*4 - var(--topDivMobile) - var(--headerHeightMobile));
+        height: 50vh;
         object-fit: cover;
     }
 

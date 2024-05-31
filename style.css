@@ -195,6 +195,10 @@ display: none;
     width: 60%;
 }
 
+#logoHeaderMobile{
+    display: none;
+}
+
 #menuItemsDesktop li {
     list-style-type: none;
     margin-left: 0vw;
@@ -475,6 +479,18 @@ width: calc(var(--marginHMobile));
         display: none;
     }
 
+    #logoHeaderMobile{
+        background-color: white;
+        height: 12vh;
+        display: block;
+        width:100%;
+        position: fixed;
+        bottom:0; 
+        z-index: 3;
+        padding: var(--marginHMobile);
+
+    }
+
     #closeMenuDesktop{
         display: none;
     }
@@ -508,11 +524,12 @@ width: calc(var(--marginHMobile));
 
      /*index*/
      .geralDiv{
-        padding: var(--marginHMobile);
+        padding: 0;
         margin:0;
      }
     .lateralDiv{
-       width:20%;
+       width:18%;
+       padding: var(--marginHMobile);
     }
 
     .menuItems{
@@ -520,7 +537,9 @@ width: calc(var(--marginHMobile));
     }
 
     .mainDiv {
-        width: 80%;
+        width: 70%;
+        padding: var(--marginHMobile);
+
 
     }
     

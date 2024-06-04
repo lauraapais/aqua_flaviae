@@ -565,7 +565,17 @@ header {
 
 
 
+ /*news*/
+ .topDivNews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.dateNews{
+    font-weight: 500!important;
+    align-self: flex-end;
+}
 
 
 
@@ -618,7 +628,6 @@ footer {
         font-size: calc(22px + 0.390625vw);
         font-weight: 700;
     }
-
 
     h3 {
         font-size: calc(16px + 0.390625vw);
@@ -684,7 +693,6 @@ footer {
     .marginBottomDefault {
         margin-bottom: var(--marginHMobile);
     }
-
 
     .marginTopDouble {
         margin-top: calc(var(--marginHMobile) * 2);
@@ -761,7 +769,6 @@ footer {
         height: 100%;
     }
 
-
     .agenda {
         flex-direction: column;
         min-width: 50vw !important;
@@ -782,8 +789,6 @@ footer {
     .agendaArrow svg {
         width: 3.5vw;
     }
-
-
 
     .agendaArrow {
         display: flex;
@@ -811,11 +816,9 @@ footer {
         text-wrap: wrap;
     }
 
-
     .agendaH1 h2:first-child {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
-
 
     .agendaGeneral {
         gap: var(--marginHMobile);
@@ -861,8 +864,6 @@ footer {
         margin-top: calc(var(--marginHMobile) / 2);
     }
 
-
-
     .newsDetails {
         display: none;
     }
@@ -881,4 +882,7 @@ footer {
         margin-top: calc(var(--marginHMobile)/2);
         justify-content: flex-end;
     }
+
+
+ 
 }

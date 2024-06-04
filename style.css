@@ -605,6 +605,10 @@ footer {
         font-size: calc(14px + 0.390625vw);
     }
 
+    .newsH1Title p:last-child {
+        font-size: calc(12px + 0.390625vw);
+    }
+
     .newsDetails p {
         font-size: calc(12px + 0.390625vw);
     }
@@ -779,8 +783,8 @@ footer {
         display: block;
     }
 
-    .agendaArrow img {
-        width: 4vw;
+    .agendaArrow svg {
+        width: 2.5vw;
     }
 
 
@@ -822,15 +826,17 @@ footer {
     }
 
     .news {
-        padding: var(--marginHMobile);
-        min-width: 50vw !important;
+        min-width: 60vw !important;
     }
 
     .newsImage img {
-        height: 40vw;
+        height: 60vw;
         width: 100%;
         margin-top: var(--marginHMobile);
-        ;
+    }
+
+    .newsH1Title p:first-child {
+        margin-bottom: calc(var(--marginH));
     }
 
     .newsDetails {

@@ -606,7 +606,7 @@ footer {
     }
 
     .newsH1Title p:last-child {
-        font-size: calc(12px + 0.390625vw);
+        font-size: calc(13px + 0.390625vw);
     }
 
     h1 {

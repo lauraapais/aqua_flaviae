@@ -200,19 +200,20 @@ header {
 
 /*header*/
 .menuIcon {
-    width:3vw;
+    width: 3vw;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-.menuIcon svg{
-    height: 1vw;
+.menuIcon svg {
+    height: 1.2vw;
+    min-height: 20px;
     fill: none;
-        stroke: #000;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-width: 1px;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 1px;
 }
 
 #menuIconMobile {
@@ -516,11 +517,11 @@ header {
     margin-bottom: calc(var(--marginH)/2);
 }
 
-.newsH1Title p:first-child{
+.newsH1Title p:first-child {
     margin-bottom: calc(var(--marginH)/4);
 }
 
-.newsH1Title p:last-child{
+.newsH1Title p:last-child {
     font-size: calc(9px + 0.390625vw);
 }
 

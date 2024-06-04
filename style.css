@@ -41,6 +41,10 @@ li,
     font-size: calc(12px + 0.390625vw);
 }
 
+p, h3{
+    text-wrap: pretty;
+}
+
 .button {
     font-size: calc(10px + 0.390625vw);
 }
@@ -275,6 +279,16 @@ header {
     justify-content: space-between;
 }
 
+.imageSectionFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageSectionFlex img{
+    width:30%;
+    border-radius: var(--borderRadius);
+}
+
 .section50 .imageSection, .section50 .textDiv{
     width:calc(50% - var(--marginH)/2);
 }
@@ -284,7 +298,7 @@ header {
     border-radius: var(--borderRadius);
 }
 
-.section50 h3{
+.textDiv h3{
     font-weight: 500;
 }
 
@@ -420,7 +434,7 @@ header {
 }
 
 .newsH1Title h3 {
-    text-wrap: wrap;
+    text-wrap: pretty;
 }
 
 .button {

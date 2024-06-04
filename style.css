@@ -835,6 +835,20 @@ footer {
         margin-top: var(--marginHMobile);
     }
 
+    .newsH1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsH1 svg{
+        margin-top: calc(var(--marginHMobile) / 2);
+    }
+
+    .newsH1Title{
+        width:100%;
+        margin-top: calc(var(--marginHMobile) / 2);
+    }
+
     .newsH1Title p:first-child {
         margin-bottom: calc(var(--marginH));
     }

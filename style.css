@@ -38,7 +38,7 @@ body {
 p,
 li,
 .button {
-    font-size: calc(12px + 0.390625vw);
+    font-size: calc(11px + 0.390625vw);
 }
 
 p,
@@ -193,7 +193,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:var(--marginH);
+    gap: var(--marginH);
 }
 
 
@@ -228,7 +228,7 @@ header {
     bottom: 0;
     margin-bottom: var(--marginH);
     mix-blend-mode: difference;
-    width:calc(21% - var(--marginH)*3);
+    width: calc(21% - var(--marginH)*3);
 }
 
 
@@ -409,6 +409,7 @@ header {
     width: 65%;
     display: flex;
     justify-content: flex-end;
+    gap: var(--marginH);
 }
 
 .agendaArrow {
@@ -417,13 +418,22 @@ header {
     margin-left: calc(var(--marginH));
 }
 
-.agendaArrow img {
+.agendaArrow {
+    align-self: flex-end;
+}
+
+.agendaArrow svg {
     width: 1vw;
+    fill: none;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
 }
 
 .newsGeneral {
     display: inline-flex;
-    gap: calc(var(--marginH) / 2);
+    gap: calc(var(--marginH));
     overflow: hidden;
     white-space: nowrap;
     cursor: grab;
@@ -435,12 +445,10 @@ header {
 
 .news {
     user-select: none;
-    background-color: var(--black);
-    color: white;
-    padding: calc(var(--marginH));
+    color: black;
     flex: 0 0 auto;
-    border-radius: var(--borderRadius);
-    width: 20vw;
+    width: 25vw;
+    transform: stroke-width 1s;
 }
 
 
@@ -456,15 +464,15 @@ header {
 }
 
 .newsImage {
-    margin-top: calc(var(--marginH)*2);
+    margin-bottom: calc(var(--marginH)/2);
 
     max-width: 100%;
     overflow: hidden;
 }
 
 .newsImage img {
-    height: 15vw;
-    width: auto;
+    height: 18vw;
+    width: 25vw;
     object-fit: cover;
     display: block;
     max-width: 100%;
@@ -487,12 +495,21 @@ header {
 }
 
 .newsH1Title {
-    width: 80%
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .newsH1Title h3 {
     text-wrap: pretty;
+    margin-bottom: calc(var(--marginH)/2);
 }
+
+.newsH1Title p:first-child{
+    margin-bottom: calc(var(--marginH)/4);
+}
+
 
 .button {
     background-color: white;

@@ -629,7 +629,7 @@ footer {
     }
 
     .lateralDiv {
-        width: 18%;
+        width: 5vw;
         padding: var(--marginHMobile);
     }
 
@@ -638,7 +638,7 @@ footer {
     }
 
     .mainDiv {
-        width: 70%;
+        width: calc(95vw - var(--marginHMobile) * 4);
         padding: var(--marginHMobile);
 overflow-x: hidden;
 
@@ -671,7 +671,7 @@ overflow-x: hidden;
 
     .agenda {
         flex-direction: column;
-        min-width: 60vw !important;
+        min-width: 50vw !important;
         padding: var(--marginHMobile);
         margin-bottom: var(--marginHMobile);
     }
@@ -729,7 +729,7 @@ overflow-x: hidden;
     }
     .news {
         padding: var(--marginHMobile);
-        min-width: 60vw !important;
+        min-width: 50vw !important;
     }
 
     .newsImage img {

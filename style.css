@@ -200,9 +200,19 @@ header {
 
 /*header*/
 .menuIcon {
-    width: 3vw;
+    width:3vw;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.menuIcon svg{
+    height: 1vw;
+    fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
 }
 
 #menuIconMobile {

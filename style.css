@@ -13,11 +13,11 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-  font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+    font-display: swap;
 }
 
 
@@ -41,7 +41,8 @@ li,
     font-size: calc(12px + 0.390625vw);
 }
 
-p, h3{
+p,
+h3 {
     text-wrap: pretty;
 }
 
@@ -83,7 +84,7 @@ h4 {
 }
 
 .bold {
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 ::-moz-selection {
@@ -143,9 +144,10 @@ a {
 
 
 /*geral*/
-.arrowScroll{
-    display: none!important;
+.arrowScroll {
+    display: none !important;
 }
+
 .geralDiv {
     display: flex;
     justify-content: space-between;
@@ -160,7 +162,7 @@ a {
     position: -webkit-sticky;
     position: sticky;
     background-color: white;
-    top:0;
+    top: 0;
     z-index: 2;
     padding: var(--marginH);
 }
@@ -273,7 +275,7 @@ header {
 
 #logoEstatico {
     width: auto;
-    height: 12vw;
+    height: 10vw;
 }
 
 
@@ -283,8 +285,8 @@ header {
     border-radius: var(--borderRadius);
 }
 
-.imagePatrimonio75{
-    width:calc(75% - var(--marginH)/2);
+.imagePatrimonio75 {
+    width: calc(75% - var(--marginH)/2);
     object-fit: cover;
     border-radius: var(--borderRadius);
 }
@@ -293,40 +295,41 @@ header {
     margin-top: 15vh;
 }
 
-.section50{
- display: flex;
-    justify-content: space-between;
-}
-
-.imageSectionFlex{
+.section50 {
     display: flex;
     justify-content: space-between;
 }
 
-.imageSectionFlex img{
-    width:30%;
+.imageSectionFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageSectionFlex img {
+    width: 30%;
     border-radius: var(--borderRadius);
 }
 
-.section50 .imageSection, .section50 .textDiv{
-    width:calc(50% - var(--marginH)/2);
+.section50 .imageSection,
+.section50 .textDiv {
+    width: calc(50% - var(--marginH)/2);
 }
 
-.imagePatrimonio50{
-    width:100%;
+.imagePatrimonio50 {
+    width: 100%;
     border-radius: var(--borderRadius);
 }
 
-.textDiv h3{
+.textDiv h3 {
     font-weight: 500;
 }
 
-.seeMore{
+.seeMore {
     text-decoration: underline;
 }
 
 
-.section50 .textDiv{
+.section50 .textDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -335,25 +338,26 @@ header {
 
 
 /*Unesco*/
-.textUnesco{
+.textUnesco {
     display: flex;
     justify-content: space-between
 }
 
-.textUnesco div{
-    width:calc(50% - var(--marginH));
+.textUnesco div {
+    width: calc(50% - var(--marginH));
 }
 
-.textUnesco .buttonUnesco{
-    width: auto !important;;
+.textUnesco .buttonUnesco {
+    width: auto !important;
+    ;
 }
 
-.buttonUnesco{
+.buttonUnesco {
     display: flex;
-    gap:var(--marginH);
+    gap: var(--marginH);
 }
 
-.alignEnd{
+.alignEnd {
     display: flex;
     justify-content: flex-end;
 }
@@ -365,8 +369,8 @@ header {
     border-radius: var(--borderRadius);
 }
 
-.imageSectionFlex video{
-    width:30%;
+.imageSectionFlex video {
+    width: 30%;
     border-radius: var(--borderRadius);
 }
 
@@ -550,7 +554,7 @@ header {
 footer {
     background-color: var(--black);
     color: white;
-    min-height: calc(12vw + var(--marginH) *2);
+    min-height: calc(10vw + var(--marginH) *2);
 }
 
 #logoFooter {
@@ -563,7 +567,7 @@ footer {
     padding: var(--marginH);
     justify-content: space-between;
     align-items: flex-end;
-    min-height: calc(12vw + var(--marginH));
+    min-height: calc(10vw + var(--marginH));
 }
 
 .footerContent div {
@@ -615,13 +619,13 @@ footer {
         padding: var(--marginHMobile);
     }
 
-    #logoFooter{
+    #logoFooter {
         height: 12vh;
         display: block;
         width: auto;
     }
 
-    .noneMobile{
+    .noneMobile {
         display: none;
     }
 
@@ -707,7 +711,7 @@ footer {
     .mainDiv {
         width: calc(95vw - var(--marginHMobile) * 4);
         padding: var(--marginHMobile);
-overflow-x: hidden;
+        overflow-x: hidden;
 
     }
 
@@ -773,11 +777,11 @@ overflow-x: hidden;
         white-space: nowrap;
     }
 
-    .agendaGeneral h3{
+    .agendaGeneral h3 {
         text-wrap: wrap;
     }
 
-    .agendaDetails p{
+    .agendaDetails p {
         text-wrap: wrap;
     }
 
@@ -787,13 +791,14 @@ overflow-x: hidden;
     }
 
 
-    .agendaGeneral{
+    .agendaGeneral {
         gap: var(--marginHMobile);
     }
 
-    .newsGeneral{
+    .newsGeneral {
         gap: var(--marginHMobile);
     }
+
     .news {
         padding: var(--marginHMobile);
         min-width: 50vw !important;
@@ -806,7 +811,7 @@ overflow-x: hidden;
         ;
     }
 
-    .newsDetails{
+    .newsDetails {
         display: none;
     }
 

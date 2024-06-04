@@ -192,7 +192,7 @@ header {
 }
 
 .textDiv {
-    width: 50%;
+    width: 60%;
 }
 
 .section {
@@ -200,6 +200,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:var(--marginH);
 }
 
 
@@ -234,7 +235,7 @@ header {
     bottom: 0;
     margin-bottom: var(--marginH);
     mix-blend-mode: difference;
-    width:calc(20% - var(--marginH)*3);
+    width:calc(21% - var(--marginH)*3);
 }
 
 

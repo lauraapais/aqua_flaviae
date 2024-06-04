@@ -73,6 +73,11 @@ h3 {
     font-weight: 700;
 }
 
+h4 {
+    font-size: calc(15px + 0.390625vw);
+    font-weight: 500;
+}
+
 .borderRadius {
     border-radius: var(--borderRadius);
 }
@@ -140,7 +145,7 @@ a {
 }
 
 .lateralDiv {
-    width: 30%;
+    width: 20%;
     height: calc(100vh - var(--marginH)*2);
     display: flex;
     flex-direction: column;
@@ -154,7 +159,7 @@ a {
 }
 
 .mainDiv {
-    width: 68%;
+    width: 78%;
     padding: var(--marginH);
 }
 
@@ -737,6 +742,10 @@ overflow-x: hidden;
         width: 100%;
         margin-top: var(--marginHMobile);
         ;
+    }
+
+    .newsDetails{
+        display: none;
     }
 
     .arrowScroll img {

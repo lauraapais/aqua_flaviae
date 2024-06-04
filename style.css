@@ -780,7 +780,7 @@ footer {
     }
 
     .agendaArrow svg {
-        width: 2.5vw;
+        width: 3.5vw;
     }
 
 
@@ -797,6 +797,10 @@ footer {
         gap: calc(var(--marginH) / 2);
         overflow: hidden;
         white-space: nowrap;
+    }
+
+    .agendaGeneral svg {
+        display: none;
     }
 
     .agendaGeneral h3 {

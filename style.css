@@ -176,13 +176,6 @@ a {
     height: var(--topDiv);
 }
 
-.botDiv {
-    height: var(--topDiv);
-    display: flex;
-    align-items: flex-end;
-}
-
-
 header {
     height: var(--topDiv);
 }

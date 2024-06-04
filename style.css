@@ -154,7 +154,7 @@ a {
 }
 
 .lateralDiv {
-    width: 20%;
+    width: 25%;
     height: calc(100vh - var(--marginH)*2);
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@ a {
 }
 
 .mainDiv {
-    width: 78%;
+    width: 75%;
     padding: var(--marginH);
 }
 
@@ -234,6 +234,7 @@ header {
     bottom: 0;
     margin-bottom: var(--marginH);
     mix-blend-mode: difference;
+    width:calc(20% - var(--marginH)*3);
 }
 
 
@@ -273,10 +274,6 @@ header {
     width: calc(70% / 2.5) !important;
 }
 
-#logoEstatico {
-    width: auto;
-    height: 10vw;
-}
 
 
 /*patrimonio mundial*/

@@ -510,6 +510,9 @@ header {
     margin-bottom: calc(var(--marginH)/4);
 }
 
+.newsH1Title p:last-child{
+    font-size: calc(9px + 0.390625vw);
+}
 
 .button {
     background-color: white;

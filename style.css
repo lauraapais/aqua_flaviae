@@ -133,6 +133,13 @@ a {
     margin-bottom: calc(var(--marginH) * 4);
 }
 
+.marginTopTriple {
+    margin-top: calc(var(--marginH) * 3);
+}
+
+.marginBottomTriple {
+    margin-bottom: calc(var(--marginH) * 3);
+}
 
 
 /*geral*/
@@ -166,6 +173,13 @@ a {
 .topDiv {
     height: var(--topDiv);
 }
+
+.botDiv {
+    height: var(--topDiv);
+    display: flex;
+    align-items: flex-end;
+}
+
 
 header {
     height: var(--topDiv);
@@ -318,12 +332,55 @@ header {
     justify-content: space-between;
 }
 
+
+
+/*Unesco*/
+.textUnesco{
+    display: flex;
+    justify-content: space-between
+}
+
+.textUnesco div{
+    width:calc(50% - var(--marginH));
+}
+
+.textUnesco .buttonUnesco{
+    width: auto !important;;
+}
+
+.buttonUnesco{
+    display: flex;
+    gap:var(--marginH);
+}
+
+.alignEnd{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imageIndex video {
+    width: 100%;
+    height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.imageSectionFlex video{
+    width:30%;
+    border-radius: var(--borderRadius);
+}
+
+
+
 /*index*/
 .imageIndex img {
     width: 100%;
     height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
     object-fit: cover;
+    border-radius: var(--borderRadius);
 }
+
+
 
 .test {
     margin-top: var(--marginH)
@@ -479,6 +536,11 @@ header {
 .arrowScroll img {
     cursor: pointer;
 }
+
+
+
+
+
 
 
 

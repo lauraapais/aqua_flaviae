@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --marginH: 2vw;
     --marginHMobile: 6vw;
@@ -12,13 +14,13 @@
 
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     src: local('Raleway'), url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
     font-display: swap;
-}
+}*/
 
 
 

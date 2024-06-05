@@ -28,6 +28,14 @@ body {
     overflow-x: hidden;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
+.menuMobile {
+    display: none;
+}
+
 p,
 li,
 .button {
@@ -766,7 +774,7 @@ footer {
         display: none;
     }
 
-    #menuItemsDesktop {
+    #menuItemsDesktop, #menuItemsDesktop.show {
         display: none;
     }
 
@@ -1001,10 +1009,11 @@ footer {
         height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*2);
         background-color: var(--grey);
         padding: var(--marginHMobile);
-        position: absolute;
+        position: fixed;
         top: calc(var(--vh, 1h) * -100);
         z-index: 3;
         transition: top 1s;
+        display: block;
     }
 
     .active {

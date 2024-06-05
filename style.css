@@ -635,7 +635,7 @@ header {
 
 
 .infoEllipse{
-padding: calc(var(--marginH)/1.5);
+padding: calc(var(--marginH)/2);
 background-color: white;
 border-radius: var(--borderRadius);
 }

@@ -644,7 +644,7 @@ header {
 
 #infoEllipseTermas{
     position: absolute;
-    bottom: 44%;
+    top: 44%;
     right: calc(34.5% + 5%);
 }
 
@@ -656,8 +656,8 @@ header {
 
 #infoEllipsePonte{
     position: absolute;
-    top: 54%;
-    right: calc(30.7% - 17%);
+    top: 63%;
+    right: 18% ;
 }
 
 

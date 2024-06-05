@@ -393,16 +393,14 @@ header {
 .agenda {
     display: flex;
     justify-content: space-between;
-    border-color: black;
-    border-width: 1px;
-    border-top: solid;
+    border-top: solid 1px black;
     padding-top: var(--marginH);
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }
 
 .agendaLast {
-    border-bottom: solid;
+    border-bottom: solid 1px black;
     padding-bottom: var(--marginH);
 }
 

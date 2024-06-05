@@ -166,7 +166,7 @@ a {
 }
 
 .topDiv {
-    height: var(--topDiv);
+    min-height: var(--topDiv);
 }
 
 header {
@@ -293,6 +293,7 @@ header {
 .section50 {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .imageSectionFlex {
@@ -328,6 +329,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: var(--marginH);
 }
 
 

@@ -14,15 +14,6 @@
 
 }
 
-/*@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Raleway'), url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-    font-display: swap;
-}*/
-
-
 
 * {
     margin: 0;
@@ -433,6 +424,9 @@ header {
 
 .agendaArrow {
     align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right:0;
 }
 
 .agendaArrow svg {
@@ -464,6 +458,9 @@ header {
     transform: stroke-width 1s;
 }
 
+.newsLink{
+    position: relative;
+}
 
 .newsGeneral:active {
     cursor: grabbing;

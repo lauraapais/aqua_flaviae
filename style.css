@@ -1025,18 +1025,16 @@ footer {
         width: calc(var(--marginHMobile));
     }
 
-
-
     .menuMobile li{
-        font-size: calc(25px + 0.390625vw);
+        font-size: calc(22px + 0.390625vw);
+    }
+
+    .menuMobile p{
+        font-size: calc(18px + 0.390625vw);
     }
 
     .menuMobile li{
         list-style: none;
-    }
-
-    .menuMobile p{
-        font-size: calc(20px + 0.390625vw);
     }
 
     .botMenuMobile{

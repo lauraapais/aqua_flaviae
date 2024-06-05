@@ -419,7 +419,7 @@ header {
 }
 
 .agendaArrow {
-    display: flex;
+    display: none;
     align-items: flex-end;
     margin-left: calc(var(--marginH));
 }
@@ -612,16 +612,13 @@ header {
 /*contactos*/
 @keyframes pulse {
     0% {
-        width: 1.5vw;
-        height: 1.5vw;
+        transform: scale(1.5);
     }
     50% {
-        width: 3vw;
-        height: 3vw;
+        transform: scale(1);
     }
     100% {
-        width: 1.5vw;
-        height: 1.5vw;
+        transform: scale(1.5);
     }
 }
 
@@ -636,6 +633,8 @@ header {
     border-radius: 50%;
     animation: pulse 5s infinite;
     transform-origin: center;
+    width:1.5vw;
+    height: 1.5vw;
 }
 
 #ellipseTermas {

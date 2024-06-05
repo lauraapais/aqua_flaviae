@@ -1,4 +1,4 @@
- gsap.registerPlugin(Draggable);
+ /*gsap.registerPlugin(Draggable);
 
     Draggable.create(".newsGeneral", {
         type: "x",
@@ -54,4 +54,10 @@
     const backAgenda = document.getElementById("backArrowAgenda");
     const agendaItemWidth = document.querySelector(".agenda").offsetWidth;
     const containerAgendaWidth = document.querySelector(".agendaDiv").offsetWidth;
+*/
 
+var flkty = new Flickity( '.main-gallery', {
+    // options
+    cellAlign: 'left',
+    contain: true
+  });

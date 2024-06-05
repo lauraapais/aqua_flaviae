@@ -565,6 +565,9 @@ header {
 
 
 
+
+
+
  /*news*/
  .topDivNews{
     display: flex;
@@ -581,9 +584,26 @@ header {
     font-weight: 500!important;
 }
 
+.titleNews{
+    width: 40%;
+}
+
+.titleNews h1{
+    text-wrap: pretty;
+}
 
 
-/*contactos*/
+
+ /*agenda*/
+.topDivAgenda{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
 /*contactos*/
 #mapaChaves {
     position: relative;
@@ -630,19 +650,10 @@ header {
     padding: 10px;
     border: 1px solid #ccc;
     z-index: 20;
-}
-
-
-
-.infoEllipse{
-padding: calc(var(--marginH)/2);
+    padding: calc(var(--marginH)/2);
 background-color: white;
 border-radius: var(--borderRadius);
 }
-
-
-
-
 
 
 

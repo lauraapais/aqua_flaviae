@@ -424,9 +424,6 @@ header {
 
 .agendaArrow {
     align-self: flex-end;
-    position: absolute;
-    bottom: 0;
-    right:0;
 }
 
 .agendaArrow svg {
@@ -460,6 +457,12 @@ header {
 
 .newsLink{
     position: relative;
+}
+
+.news .agendaArrow{
+    position: absolute;
+    bottom: 0;
+    right:0;
 }
 
 .newsGeneral:active {

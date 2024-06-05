@@ -608,6 +608,21 @@ header {
 
 
 /*contactos*/
+@keyframes pulse {
+    0% {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    50% {
+        width: 3vw;
+        height: 3vw;
+    }
+    100% {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}
+
 #mapaChaves {
     position: relative;
     display: inline-block;
@@ -616,33 +631,33 @@ header {
 .ellipse {
     background-color: white;
     z-index: 10;
-    width: 3vw;
-    height: 3vw;
     border-radius: 50%;
+    animation: pulse 5s infinite;
+    transform-origin: center;
 }
 
 #ellipseTermas {
     position: absolute;
-    bottom: 10%;
-    right: 20%;
+    top: 44%;
+    right: 34.5%;
 }
 
 #infoEllipseTermas{
     position: absolute;
-    bottom: 10%;
-    right: calc(20% + 4vw);
+    bottom: 44%;
+    right: calc(34.5% + 5%);
 }
 
 #ellipsePonte {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 54%;
+    right: 30.7%;
 }
 
 #infoEllipsePonte{
     position: absolute;
-    top: 50%;
-    left: calc(40% + 4vw);
+    top: 54%;
+    right: calc(30.7% - 17%);
 }
 
 

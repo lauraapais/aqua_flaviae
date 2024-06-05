@@ -504,11 +504,11 @@ header {
 
 
 .news p {
-    text-wrap: wrap;
+    text-wrap: pretty;
 }
 
 .newsH1Title {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -262,6 +262,7 @@ header {
 #menuItemsDesktop.show {
     display: block;
     opacity: 1;
+    pointer-events: visible;
 }
 
 .selected {

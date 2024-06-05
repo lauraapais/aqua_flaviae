@@ -419,6 +419,10 @@ header {
     justify-content: space-between;
 }
 
+.agendaH1 h3 {
+    text-wrap: pretty;
+}
+
 .agendaDetails {
     width: 65%;
     display: flex;
@@ -440,6 +444,7 @@ header {
     stroke-linejoin: round;
     stroke-width: 1px;
 }
+
 
 .newsGeneral {
     display: inline-flex;
@@ -731,7 +736,7 @@ footer {
     }
 
     h3 {
-        font-size: calc(16px + 0.390625vw);
+        font-size: calc(18px + 0.390625vw);
         font-weight: 700;
     }
 
@@ -882,13 +887,8 @@ footer {
 
     .agendaH1 {
         width: 100%;
-        margin-bottom: var(--marginHMobile);
     }
 
-    .agendaDetails {
-        width: 100%;
-        display: block;
-    }
 
     .agendaArrow svg {
         width: 3.5vw;
@@ -911,13 +911,18 @@ footer {
         display: none;
     }
 
-    .agendaGeneral h3 {
+    .agendaGeneral {
         text-wrap: wrap;
     }
 
     .agendaDetails p {
         text-wrap: wrap;
     }
+
+    .agendaH1{
+        margin-bottom: calc(var(--marginHMobile) / 2);
+    }
+    
 
     .agendaH1 h2:first-child {
         margin-bottom: calc(var(--marginHMobile) / 2);
@@ -926,6 +931,8 @@ footer {
     .agendaGeneral {
         gap: var(--marginHMobile);
     }
+
+   
 
     .newsGeneral {
         gap: var(--marginHMobile);
@@ -988,4 +995,47 @@ footer {
 
 
 
+
+    .menuMobile{
+        width: calc(100vw - var(--marginHMobile)*2);
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*2);
+        background-color: var(--grey);
+        padding: var(--marginHMobile);
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+
+    #menuItemsMobile{
+        height: calc(var(--vh, 1h)* 90 - var(--marginHMobile)*3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:var(--marginHMobile);
+    }
+
+
+
+    .menuMobile li{
+        font-size: calc(25px + 0.390625vw);
+    }
+
+    .menuMobile li{
+        list-style: none;
+    }
+
+    .menuMobile p{
+        align-self: flex-end;
+        font-size: calc(20px + 0.390625vw);
+    }
+
+    .botMenuMobile{
+        height: 12vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .botMenuMobile img{
+        height: 100%;
+    }
 }

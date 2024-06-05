@@ -394,7 +394,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
-    padding: var(--marginHMobile) 0 ;
+    padding: var(--marginH) 0 ;
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }

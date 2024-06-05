@@ -5,7 +5,7 @@
     --marginHMobile: 6vw;
     --topDiv: 15vh;
     --topDivMobile: 10vh;
-    --borderRadius: 10px;
+    --borderRadius: 0px;
     --headerHeightMobile: 15vh;
 
 
@@ -295,7 +295,7 @@ header {
 .section50 {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .imageSectionFlex {
@@ -395,14 +395,18 @@ header {
     justify-content: space-between;
     border-color: black;
     border-width: 1px;
-    border-style: solid;
-    padding: calc(var(--marginH));
+    border-top: solid;
+    padding-top: var(--marginH);
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }
 
+.agendaLast {
+    border-bottom: solid;
+    padding-bottom: var(--marginH);
+}
+
 .agenda:hover {
-    background-color: var(--grey);
     cursor: pointer;
 }
 
@@ -421,12 +425,8 @@ header {
 }
 
 .agendaArrow {
-    display: none;
     align-items: flex-end;
     margin-left: calc(var(--marginH));
-}
-
-.agendaArrow {
     align-self: flex-end;
 }
 
@@ -459,14 +459,15 @@ header {
     transform: stroke-width 1s;
 }
 
-.newsLink{
+.newsLink {
     position: relative;
 }
 
-.news .agendaArrow{
+.news .agendaArrow {
     position: absolute;
     bottom: 0;
-    right:0;
+    right: 0;
+    display: none;
 }
 
 .newsGeneral:active {
@@ -538,7 +539,7 @@ header {
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    padding: calc(var(--borderRadius)* 0.6) calc(var(--borderRadius)* 1.8);
+    padding: calc(var(--marginH)/4) calc(var(--marginH)/2);
     text-align: center;
     text-decoration: none;
     border-radius: 100px;
@@ -575,34 +576,34 @@ header {
 
 
 
- /*news*/
- .topDivNews{
+/*news*/
+.topDivNews {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-.newsDetails{
+.newsDetails {
     align-self: flex-end;
 }
 
-.newsDetails p{
-    font-weight: 500!important;
+.newsDetails p {
+    font-weight: 500 !important;
 }
 
-.titleNews{
+.titleNews {
     width: 40%;
 }
 
-.titleNews h1{
+.titleNews h1 {
     text-wrap: pretty;
 }
 
 
 
- /*agenda*/
-.topDivAgenda{
+/*agenda*/
+.topDivAgenda {
     display: flex;
     justify-content: space-between;
 }
@@ -616,9 +617,11 @@ header {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(2);
     }
+
     100% {
         transform: scale(1);
     }
@@ -635,7 +638,7 @@ header {
     border-radius: 50%;
     animation: pulse 5s infinite;
     transform-origin: center;
-    width:1.5vw;
+    width: 1.5vw;
     height: 1.5vw;
 }
 
@@ -645,7 +648,7 @@ header {
     right: 34.5%;
 }
 
-#infoEllipseTermas{
+#infoEllipseTermas {
     position: absolute;
     top: 44%;
     right: calc(34.5% + 5%);
@@ -657,10 +660,10 @@ header {
     right: 30.7%;
 }
 
-#infoEllipsePonte{
+#infoEllipsePonte {
     position: absolute;
     top: 63%;
-    right: 18% ;
+    right: 18%;
 }
 
 
@@ -672,8 +675,8 @@ header {
     border: 1px solid #ccc;
     z-index: 20;
     padding: calc(var(--marginH)/2);
-background-color: white;
-border-radius: var(--borderRadius);
+    background-color: white;
+    border-radius: var(--borderRadius);
 }
 
 
@@ -946,17 +949,17 @@ footer {
         margin-top: var(--marginHMobile);
     }
 
-    .newsH1{
+    .newsH1 {
         display: flex;
         flex-direction: column;
     }
 
-    .newsH1 svg{
+    .newsH1 svg {
         margin-top: calc(var(--marginHMobile) / 2);
     }
 
-    .newsH1Title{
-        width:100%;
+    .newsH1Title {
+        width: 100%;
         margin-top: calc(var(--marginHMobile) / 2);
     }
 
@@ -980,5 +983,5 @@ footer {
     }
 
 
- 
+
 }

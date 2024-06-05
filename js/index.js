@@ -55,9 +55,3 @@
     const agendaItemWidth = document.querySelector(".agenda").offsetWidth;
     const containerAgendaWidth = document.querySelector(".agendaDiv").offsetWidth;
 */
-
-var flkty = new Flickity( '.main-gallery', {
-    // options
-    cellAlign: 'left',
-    contain: true
-  });

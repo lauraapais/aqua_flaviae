@@ -280,7 +280,7 @@ header {
     border-radius: var(--borderRadius);
 }
 
-.imagePatrimonio75 {
+.image100 {
     width: calc(100% - var(--marginH)/2);
     object-fit: cover;
     border-radius: var(--borderRadius);
@@ -333,16 +333,16 @@ header {
 
 
 /*Unesco*/
-.textUnesco {
+.textDiv50 {
     display: flex;
     justify-content: space-between
 }
 
-.textUnesco div {
+.textDiv50 div {
     width: calc(50% - var(--marginH));
 }
 
-.textUnesco .buttonUnesco {
+.textDiv50 .buttonUnesco {
     width: auto !important;
     ;
 }
@@ -572,10 +572,74 @@ header {
     justify-content: space-between;
 }
 
-.dateNews{
-    font-weight: 500!important;
+
+.newsDetails{
     align-self: flex-end;
 }
+
+.newsDetails p{
+    font-weight: 500!important;
+}
+
+
+
+/*contactos*/
+/*contactos*/
+#mapaChaves {
+    position: relative;
+    display: inline-block;
+}
+
+.ellipse {
+    background-color: white;
+    z-index: 10;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+}
+
+#ellipseTermas {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+
+#infoEllipseTermas{
+    position: absolute;
+    bottom: 10%;
+    right: calc(20% + 4vw);
+}
+
+#ellipsePonte {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+#infoEllipsePonte{
+    position: absolute;
+    top: 50%;
+    left: calc(40% + 4vw);
+}
+
+
+.infoEllipse {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 20;
+}
+
+
+
+.infoEllipse{
+padding: calc(var(--marginH)/1.5);
+background-color: white;
+border-radius: var(--borderRadius);
+}
+
 
 
 

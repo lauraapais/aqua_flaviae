@@ -394,7 +394,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
-    padding-top: var(--marginH);
+    padding: var(--marginHMobile) 0 ;
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }
@@ -869,8 +869,7 @@ footer {
     .agenda {
         flex-direction: column;
         min-width: 50vw !important;
-        padding: var(--marginHMobile);
-        margin-bottom: var(--marginHMobile);
+        padding: var(--marginHMobile) 0 ;
     }
 
     .agendaH1 {
@@ -895,7 +894,6 @@ footer {
     }
 
     .agendaGeneral {
-        display: inline-flex;
         gap: calc(var(--marginH) / 2);
         overflow: hidden;
         white-space: nowrap;

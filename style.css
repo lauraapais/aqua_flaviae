@@ -816,6 +816,10 @@ footer {
         flex-direction: column;
     }
 
+    .button{
+        padding: calc(var(--marginHMobile) / 4) calc(var(--marginHMobile) / 2);
+    }
+
 
 
 

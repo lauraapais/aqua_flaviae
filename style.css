@@ -1003,6 +1003,13 @@ footer {
         text-wrap: wrap;
     }
 
+    .agendaDetails{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: var(--marginH);
+    }
+
     .agendaH1 {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }

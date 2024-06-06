@@ -966,7 +966,7 @@ footer {
     .agenda {
         flex-direction: column;
         min-width: 50vw !important;
-        padding: var(--marginHMobile) 0;
+        padding: var(--marginHMobile);
     }
 
     .agendaH1 {

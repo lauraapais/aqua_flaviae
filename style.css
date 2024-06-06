@@ -916,8 +916,10 @@ footer {
         padding: var(--marginHMobile);
     }
 
-    #menuIconDesktop {
-        width: 3vw;
+
+
+    .menuIcon svg{
+        width: 3vw; 
     }
 
     .menuItems {

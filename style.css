@@ -864,6 +864,10 @@ footer {
         justify-content: flex-start;
     }
 
+    .agendaArrow{
+        display: none!important;
+    }
+
 
 
 

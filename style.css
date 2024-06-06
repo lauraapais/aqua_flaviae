@@ -1143,7 +1143,7 @@ footer {
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2)!important;
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDivMobile)*2)!important
     }
 
     #verticalImage{

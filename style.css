@@ -912,14 +912,14 @@ footer {
     }
 
     .lateralDiv {
-        width: 4.5vw;
+        width: 5vw;
         padding: var(--marginHMobile);
     }
 
 
 
     .menuIcon svg{
-        width: 4.5vw;
+        width: 5vw;
     }
 
     .menuItems {

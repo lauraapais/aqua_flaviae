@@ -202,6 +202,14 @@ header {
     gap: var(--marginH);
 }
 
+.h1Div{
+    width:40%;
+}
+
+.h1Div h1{
+    text-wrap:pretty;
+}
+
 
 
 
@@ -610,10 +618,6 @@ header {
     font-weight: 500 !important;
 }
 
-.titleNews {
-    width: 40%;
-}
-
 .titleNews h1 {
     text-wrap: pretty;
 }
@@ -739,6 +743,7 @@ footer {
     h1 {
         font-size: calc(25px + 0.390625vw);
         font-weight: 700;
+        text-wrap: pretty;
     }
 
     h2 {
@@ -1114,7 +1119,7 @@ footer {
     }
 
     #menuItemsDesktop li {
-        font-size: calc(30px + 0.390625vw);
+        font-size: calc(27px + 0.390625vw);
     }
 
     #menuItemsDesktop p {

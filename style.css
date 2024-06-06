@@ -14,7 +14,6 @@
 
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +88,7 @@ h4 {
     font-weight: 700 !important;
 }
 
-.regular{
+.regular {
     font-weight: 500 !important;
 }
 
@@ -100,7 +99,6 @@ h4 {
 ::selection {
     background: var(--grey);
 }
-
 
 a {
     text-decoration: none;
@@ -114,7 +112,6 @@ a {
 .marginBottomDefault {
     margin-bottom: var(--marginH);
 }
-
 
 .marginTopDouble {
     margin-top: calc(var(--marginH) * 2);
@@ -147,6 +144,9 @@ a {
 .marginBottomTriple {
     margin-bottom: calc(var(--marginH) * 3);
 }
+
+
+
 
 
 /*geral*/
@@ -204,6 +204,8 @@ header {
 
 
 
+
+
 /*header*/
 .menuIcon {
     width: 3vw;
@@ -247,7 +249,6 @@ header {
     width: calc(21% - var(--marginH)*3);
 }
 
-
 #logoHeaderMobile {
     display: none;
 }
@@ -285,6 +286,8 @@ header {
     transition: transform 0.1s linear;
     width: calc(70% / 2.5) !important;
 }
+
+
 
 
 
@@ -338,13 +341,14 @@ header {
     text-decoration: underline;
 }
 
-
 .section50 .textDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: var(--marginH);
 }
+
+
 
 
 
@@ -387,6 +391,8 @@ header {
 
 
 
+
+
 /*index*/
 .imageIndex img {
     width: 100%;
@@ -395,12 +401,9 @@ header {
     border-radius: var(--borderRadius);
 }
 
-
-
 .test {
     margin-top: var(--marginH)
 }
-
 
 .agenda {
     display: flex;
@@ -452,7 +455,6 @@ header {
     stroke-linejoin: round;
     stroke-width: 1px;
 }
-
 
 .newsGeneral {
     display: inline-flex;
@@ -520,7 +522,6 @@ header {
     height: 5vw;
 }
 
-
 .news p {
     text-wrap: pretty;
 }
@@ -585,7 +586,7 @@ header {
 }
 
 
-.flickity-page-dots{
+.flickity-page-dots {
     display: none;
 }
 
@@ -599,7 +600,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 .newsDetails {
     align-self: flex-end;
@@ -616,6 +616,8 @@ header {
 .titleNews h1 {
     text-wrap: pretty;
 }
+
+
 
 
 
@@ -683,18 +685,18 @@ header {
     right: 18%;
 }
 
-
 .infoEllipse {
     display: none;
     position: absolute;
     background-color: white;
     padding: 10px;
-    border: 1px solid #ccc;
     z-index: 20;
     padding: calc(var(--marginH)/2);
     background-color: white;
     border-radius: var(--borderRadius);
 }
+
+
 
 
 
@@ -776,7 +778,8 @@ footer {
         display: none;
     }
 
-    #menuItemsDesktop, #menuItemsDesktop.show {
+    #menuItemsDesktop,
+    #menuItemsDesktop.show {
         display: none;
     }
 
@@ -835,8 +838,56 @@ footer {
         flex-direction: column;
     }
 
-    .button{
+    .button {
         padding: calc(var(--marginHMobile) / 4) calc(var(--marginHMobile) / 2);
+    }
+
+    .textDiv50 {
+        flex-direction: column;
+    }
+
+    .textDiv50 div {
+        width: 100%;
+        margin-bottom: var(--marginHMobile);
+    }
+
+
+
+
+
+    /*contactos*/
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #mapaChaves {
+        position: relative;
+        display: inline-block;
+    }
+
+    .ellipse {
+        background-color: white;
+        z-index: 10;
+        border-radius: 50%;
+        animation: pulse 5s infinite;
+        transform-origin: center;
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #mapaChaves {
+        height: 50vh;
+        width: 100%;
     }
 
 
@@ -859,7 +910,7 @@ footer {
     }
 
     .mainDiv {
-        width: calc(95vw - var(--marginHMobile) * 4);
+        min-width: calc(95vw - var(--marginHMobile) * 4);
         padding: var(--marginHMobile);
         overflow-x: hidden;
 
@@ -892,7 +943,7 @@ footer {
     .agenda {
         flex-direction: column;
         min-width: 50vw !important;
-        padding: var(--marginHMobile) 0 ;
+        padding: var(--marginHMobile) 0;
     }
 
     .agendaH1 {
@@ -929,10 +980,10 @@ footer {
         text-wrap: wrap;
     }
 
-    .agendaH1{
+    .agendaH1 {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
-    
+
 
     .agendaH1 h2:first-child {
         margin-bottom: calc(var(--marginHMobile) / 2);
@@ -941,8 +992,6 @@ footer {
     .agendaGeneral {
         gap: var(--marginHMobile);
     }
-
-   
 
     .newsGeneral {
         gap: var(--marginHMobile);
@@ -1003,10 +1052,7 @@ footer {
         justify-content: flex-end;
     }
 
-
-
-
-    .menuMobile{
+    .menuMobile {
         width: calc(100vw - var(--marginHMobile)*2);
         height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*2);
         background-color: var(--grey);
@@ -1023,45 +1069,45 @@ footer {
         top: 0 !important;
     }
 
-    #menuItemsMobile{
+    #menuItemsMobile {
         height: calc(var(--vh, 1h)* 90 - var(--marginHMobile)*3 - 5vh);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap:var(--marginHMobile);
+        gap: var(--marginHMobile);
     }
 
-    #closeMenuMobile{
-        stroke:black;
+    #closeMenuMobile {
+        stroke: black;
         width: calc(var(--marginHMobile));
     }
 
-    .menuMobile li{
+    .menuMobile li {
         font-size: calc(22px + 0.390625vw);
     }
 
-    .menuMobile p{
+    .menuMobile p {
         font-size: calc(18px + 0.390625vw);
     }
 
-    .menuMobile li{
+    .menuMobile li {
         list-style: none;
     }
 
-    .botMenuMobile{
+    .botMenuMobile {
         height: 12vh;
         display: flex;
         justify-content: space-between;
     }
 
-    .topMenuMobile{
+    .topMenuMobile {
         height: 5vh;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
 
-    .botMenuMobile img{
+    .botMenuMobile img {
         height: 100%;
     }
 }

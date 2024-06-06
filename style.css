@@ -10,7 +10,7 @@
 
 
     --black: #212121;
-    --grey: #F2F2F2;
+    --grey: #F7F7F7;
 
 }
 
@@ -653,7 +653,6 @@ header {
 
 .ellipse {
     background-color: white;
-    z-index:3;
     border-radius: 50%;
     animation: pulse 5s infinite;
     transform-origin: center;
@@ -690,7 +689,6 @@ header {
     position: absolute;
     background-color: white;
     padding: 10px;
-    z-index:3;
     padding: calc(var(--marginH)/2);
     background-color: white;
     border-radius: var(--borderRadius);
@@ -837,6 +835,34 @@ footer {
         margin-bottom: var(--marginHMobile);
     }
 
+    .textDiv {
+        width: 100%;
+    }
+
+    .section50,
+    .imageSectionFlex {
+        flex-direction: column;
+    }
+
+    .section50 .imageSection,
+    .section50 .textDiv {
+        width: 100%;
+    }
+
+    .section50 div:first-child {
+        margin-bottom: var(--marginHMobile);
+    }
+
+    .imageSectionFlex img , .imageSectionFlex video{
+        width: 100%;
+        margin-bottom: var(--marginHMobile);
+    }
+
+    .section {
+        min-height: 0;
+    }
+
+
 
 
 
@@ -863,7 +889,6 @@ footer {
 
     .ellipse {
         background-color: white;
-        z-index: 3;
         border-radius: 50%;
         animation: pulse 5s infinite;
         transform-origin: center;
@@ -1038,19 +1063,26 @@ footer {
 
     #menuItemsDesktop {
         width: calc(100vw - var(--marginHMobile)*2);
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*4 - 12vh);
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - 12vh);
         background-color: var(--grey);
         padding: var(--marginHMobile);
         position: fixed;
-        top: calc(var(--vh, 1h) * 0);
+        top: calc(var(--vh, 1h) * -100);
         left: 0;
         z-index: 10;
         transition: top 1s;
-        margin:0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: calc(var(--marginH) * 2);
+        transition: top 1s linear;
+    }
+
+    #menuItemsDesktop.show {
+        transition: top 1s linear;
+        display: flex;
+        top: calc(var(--vh, 1h) * 0);
     }
 
     .menuIcon svg {
@@ -1058,18 +1090,15 @@ footer {
         z-index: 100;
     }
 
-    #menuItemsDesktop.show{
-        display: flex;
-    }
-
-    #menuItemsDesktop li{
+    #menuItemsDesktop li {
         font-size: calc(20px + 0.390625vw);
     }
-    #menuItemsDesktop p{
-        font-size: calc(13px + 0.390625vw);
+
+    #menuItemsDesktop p {
+        font-size: calc(16px + 0.390625vw);
         position: absolute;
         bottom: 0;
-        right:0;
+        right: 0;
         margin-bottom: var(--marginHMobile);
         margin-right: var(--marginHMobile);
     }

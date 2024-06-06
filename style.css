@@ -203,7 +203,7 @@ header {
 }
 
 .h1Div{
-    width:40%;
+    width:50%;
 }
 
 .h1Div h1{
@@ -852,7 +852,7 @@ footer {
     }
 
     .section50 div:first-child {
-        margin-bottom: var(--marginHMobile);
+        margin-bottom: calc(var(--marginHMobile) /2);
     }
 
     .imageSectionFlex img , .imageSectionFlex video{
@@ -871,6 +871,10 @@ footer {
 
     .agendaArrow{
         display: none!important;
+    }
+
+    .h1Div{
+        width:100%;
     }
 
 

@@ -1028,7 +1028,7 @@ footer {
     }
 
     .news {
-        min-width: 60vw !important;
+        min-width: 70vw !important;
         margin-bottom: 0!important;
     }
 
@@ -1045,7 +1045,7 @@ footer {
     }
 
     .newsImage img {
-        height: 60vw;
+        height: 70vw;
         width: 100%;
     }
 

@@ -755,7 +755,7 @@ footer {
     }
 
     #menuIconDesktop {
-        width: calc(var(--marginHMobile));
+        width: 4vw;
     }
 
 
@@ -920,7 +920,7 @@ footer {
     }
 
     .lateralDiv {
-        width: 5vw;
+        width: 4vw;
         padding: var(--marginHMobile);
     }
 
@@ -929,8 +929,8 @@ footer {
     }
 
     .mainDiv {
-        min-width: calc(95vw - var(--marginHMobile) * 4);
-        padding: var(--marginHMobile);
+        min-width: calc(95vw - var(--marginHMobile)* 3);
+        padding: var(--marginHMobile) var(--marginHMobile) var(--marginHMobile) 0;
         overflow-x: hidden;
 
     }
@@ -1080,19 +1080,18 @@ footer {
         top: calc(var(--vh, 1h) * -100);
         left: 0;
         z-index: 10;
-        transition: top 1s;
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: calc(var(--marginH) * 2);
-        transition: top 1s linear;
+        transition: top 0.7s linear;
     }
 
     #menuItemsDesktop.show {
-        transition: top 1s linear;
         display: flex;
         top: calc(var(--vh, 1h) * 0);
+        transition: top 0.7s linear;
     }
 
     .menuIcon svg {

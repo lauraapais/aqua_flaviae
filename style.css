@@ -442,6 +442,7 @@ header {
 }
 
 .agendaArrow {
+    display: none;
     align-items: flex-end;
     margin-left: calc(var(--marginH));
     align-self: flex-end;
@@ -484,7 +485,6 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
-    display: none;
 }
 
 .newsGeneral:active {
@@ -496,6 +496,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     text-wrap: wrap;
+    width:90%;
 }
 
 .newsImage {

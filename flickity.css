@@ -6,7 +6,9 @@ https://flickity.metafizzy.co
   position: relative;
 }
 
-.flickity-enabled:focus { outline: none; }
+.flickity-enabled:focus {
+  outline: none;
+}
 
 .flickity-viewport {
   overflow: hidden;
@@ -22,28 +24,24 @@ https://flickity.metafizzy.co
 
 
 .gallery-cell {
-  margin-right: 2vw;
-}
-
-.gallery-cell {
   display: block;
   max-width: 100%;
-  max-height: 100%;
-  /* dim unselected */
-  opacity: 0.7;
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  max-height: initial!important;
+  margin-right: 2vw;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
 }
 
 /* brighten selected image */
-.gallery-cell.is-selected  {
+.gallery-cell.is-selected {
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 /* draggable */
@@ -51,9 +49,9 @@ https://flickity.metafizzy.co
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {
@@ -71,13 +69,14 @@ https://flickity.metafizzy.co
 
 .flickity-button {
   position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: hsla(0, 0%, 100%, 0.4);
   border: none;
-  color: #333;
+  color: black;
+  transition: background 1s;
 }
 
 .flickity-button:hover {
-  background: white;
+  background: hsla(0, 0%, 100%, 0.9);
   cursor: pointer;
 }
 
@@ -91,10 +90,10 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:disabled {
-  opacity: 0.3;
+  opacity: 0;
   cursor: auto;
-  /* prevent disabled button from capturing pointer up event. #716 */
   pointer-events: none;
+  transition: opacity cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .flickity-button-icon {
@@ -110,13 +109,20 @@ https://flickity.metafizzy.co
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 0px; }
-.flickity-prev-next-button.next { right: 0px; }
+.flickity-prev-next-button.previous {
+  left: 0px;
+}
+
+.flickity-prev-next-button.next {
+  right: 0px;
+}
+
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
+
 .flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
@@ -143,7 +149,9 @@ https://flickity.metafizzy.co
   line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots { direction: rtl; }
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
 
 .flickity-page-dots .dot {
   display: inline-block;

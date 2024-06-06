@@ -33,3 +33,4 @@ function checkOverlap() {
 window.addEventListener('scroll', checkOverlap);
 window.addEventListener('resize', checkOverlap);
 checkOverlap();
+

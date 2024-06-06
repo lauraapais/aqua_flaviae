@@ -587,6 +587,10 @@ header {
 }
 
 
+.flickity-page-dots{
+    display: none;
+}
+
 
 
 

@@ -406,7 +406,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
-    padding: var(--marginH) 0 ;
+    padding: var(--marginH);
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }
@@ -514,9 +514,7 @@ header {
 .visitaDiv {
     display: flex;
     justify-content: space-between;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
+    border-top: solid 1px black;
     padding: calc(var(--marginH));
     border-radius: var(--borderRadius);
     height: 5vw;

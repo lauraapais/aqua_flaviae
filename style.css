@@ -653,7 +653,7 @@ header {
 
 .ellipse {
     background-color: white;
-    z-index: 10;
+    z-index:3;
     border-radius: 50%;
     animation: pulse 5s infinite;
     transform-origin: center;
@@ -690,7 +690,7 @@ header {
     position: absolute;
     background-color: white;
     padding: 10px;
-    z-index: 20;
+    z-index:3;
     padding: calc(var(--marginH)/2);
     background-color: white;
     border-radius: var(--borderRadius);
@@ -753,16 +753,12 @@ footer {
     }
 
     #menuIconDesktop {
-        display: none;
-    }
-
-    #menuIconMobile {
-        display: block;
         width: calc(var(--marginHMobile));
     }
 
+
     footer {
-        z-index: 100;
+        z-index: 5;
         position: relative;
         min-height: 12vh !important;
         padding: var(--marginHMobile);
@@ -778,22 +774,15 @@ footer {
         display: none;
     }
 
-    #menuItemsDesktop,
-    #menuItemsDesktop.show {
-        display: none;
-    }
 
-    #logoHeader {
-        display: none;
-    }
 
     #logoHeaderMobile {
         background-color: white;
         height: 12vh;
         display: block;
-        width: 100%;
+        width: calc(100vw - var(--marginHMobile)* 2);
         position: fixed;
-        z-index: 3;
+        z-index: 4;
         padding: var(--marginHMobile);
         left: 0;
         right: 0;
@@ -801,9 +790,6 @@ footer {
         top: auto;
     }
 
-    #closeMenuDesktop {
-        display: none;
-    }
 
     .marginTopDefault {
         margin-top: var(--marginHMobile);
@@ -877,7 +863,7 @@ footer {
 
     .ellipse {
         background-color: white;
-        z-index: 10;
+        z-index: 3;
         border-radius: 50%;
         animation: pulse 5s infinite;
         transform-origin: center;
@@ -916,9 +902,7 @@ footer {
 
     }
 
-    #menuItemsDesktop {
-        display: none;
-    }
+
 
     .menuHeader img {
         height: calc(var(--marginHMobile)* 0.7);
@@ -1052,16 +1036,42 @@ footer {
         justify-content: flex-end;
     }
 
-    .menuMobile {
+    #menuItemsDesktop {
         width: calc(100vw - var(--marginHMobile)*2);
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*2);
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)*4 - 12vh);
         background-color: var(--grey);
         padding: var(--marginHMobile);
         position: fixed;
-        top: calc(var(--vh, 1h) * -100);
-        z-index: 3;
+        top: calc(var(--vh, 1h) * 0);
+        left: 0;
+        z-index: 10;
         transition: top 1s;
-        display: block;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(var(--marginH) * 2);
+    }
+
+    .menuIcon svg {
+        position: absolute;
+        z-index: 100;
+    }
+
+    #menuItemsDesktop.show{
+        display: flex;
+    }
+
+    #menuItemsDesktop li{
+        font-size: calc(20px + 0.390625vw);
+    }
+    #menuItemsDesktop p{
+        font-size: calc(13px + 0.390625vw);
+        position: absolute;
+        bottom: 0;
+        right:0;
+        margin-bottom: var(--marginHMobile);
+        margin-right: var(--marginHMobile);
     }
 
     .active {
@@ -1069,45 +1079,6 @@ footer {
         top: 0 !important;
     }
 
-    #menuItemsMobile {
-        height: calc(var(--vh, 1h)* 90 - var(--marginHMobile)*3 - 5vh);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: var(--marginHMobile);
-    }
 
-    #closeMenuMobile {
-        stroke: black;
-        width: calc(var(--marginHMobile));
-    }
 
-    .menuMobile li {
-        font-size: calc(22px + 0.390625vw);
-    }
-
-    .menuMobile p {
-        font-size: calc(18px + 0.390625vw);
-    }
-
-    .menuMobile li {
-        list-style: none;
-    }
-
-    .botMenuMobile {
-        height: 12vh;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .topMenuMobile {
-        height: 5vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .botMenuMobile img {
-        height: 100%;
-    }
 }

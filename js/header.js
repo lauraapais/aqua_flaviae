@@ -33,31 +33,3 @@ function checkOverlap() {
 window.addEventListener('scroll', checkOverlap);
 window.addEventListener('resize', checkOverlap);
 checkOverlap();
-
-
-
-const menuIconMobile = document.getElementById('menuIconMobile');
-const menuMobile = document.querySelector('.menuMobile');
-const closeMenuMobile = document.getElementById('closeMenuMobile');
-
-menuIconMobile.addEventListener('click', () => {
-    menuMobile.classList.add('active');
-    document.body.classList.add('lock');
-});
-
-closeMenuMobile.addEventListener('click', () => {
-    menuMobile.classList.remove('active');
-    if(document.body.classList.contains('lock'))
-        document.body.classList.remove('lock');
-});
-
-
-window.addEventListener('resize', function(event) {
-    console.log("teste");
-    if(this.innerWidth<900) menuLock();
-}, true);
-
-function menuLock() {
-    if(document.body.classList.contains('lock'))
-        document.body.classList.remove('lock');
-}

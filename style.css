@@ -815,6 +815,10 @@ footer {
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
 
+    .marginTopTriple {
+        margin-top: calc(var(--marginHMobile)* 3);
+    }
+
     .footerContent {
         align-items: flex-start;
         margin-top: 6vw;
@@ -852,7 +856,7 @@ footer {
     }
 
     .section50 div:first-child {
-        margin-bottom: calc(var(--marginHMobile) /2);
+        margin-bottom: calc(var(--marginHMobile));
     }
 
     .imageSectionFlex img , .imageSectionFlex video{

@@ -866,6 +866,10 @@ footer {
         min-height: 0;
     }
 
+    .alignEnd{
+        justify-content: flex-start;
+    }
+
 
 
 
@@ -946,7 +950,7 @@ footer {
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h) * 100 - var(--marginHMobile) * 3 - var(--topDivMobile) - 12vh);
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2);
         object-fit: cover;
     }
 

@@ -857,6 +857,7 @@ footer {
 
     .section {
         min-height: 0;
+        gap: var(--marginHMobile);
     }
 
     .alignEnd{
@@ -1116,6 +1117,28 @@ footer {
         top: 0 !important;
     }
 
+
+
+    .imageIndex video {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagePatrimonio img {
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2)!important;
+    }
+
+    .imageIndex img {
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2)!important;
+    }
+
+    #verticalImage{
+        object-position: right;
+    }
+
+    .section div:first-child{
+        margin-bottom: calc(var(--marginHMobile));
+    }
 
 
 }

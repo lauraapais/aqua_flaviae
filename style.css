@@ -754,11 +754,6 @@ footer {
         font-size: calc(15px + 0.390625vw);
     }
 
-    #menuIconDesktop {
-        width: 4vw;
-    }
-
-
     footer {
         z-index: 5;
         position: relative;
@@ -776,8 +771,6 @@ footer {
         display: none;
     }
 
-
-
     #logoHeaderMobile {
         background-color: white;
         height: 12vh;
@@ -791,7 +784,6 @@ footer {
         bottom: 0;
         top: auto;
     }
-
 
     .marginTopDefault {
         margin-top: var(--marginHMobile);
@@ -920,8 +912,12 @@ footer {
     }
 
     .lateralDiv {
-        width: 4vw;
+        width: 3vw;
         padding: var(--marginHMobile);
+    }
+
+    #menuIconDesktop {
+        width: 3vw;
     }
 
     .menuItems {

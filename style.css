@@ -1022,6 +1022,7 @@ footer {
 
     .news {
         min-width: 60vw !important;
+        margin-bottom: 0!important;
     }
 
     .newsH1Title p:first-child {
@@ -1039,7 +1040,6 @@ footer {
     .newsImage img {
         height: 60vw;
         width: 100%;
-        margin-top: var(--marginHMobile);
     }
 
     .newsH1 {
@@ -1144,5 +1144,13 @@ footer {
         margin-bottom: calc(var(--marginHMobile));
     }
 
+    .noticiasGeral{
+        margin-bottom: 0!important;
+    }
+
+
+    .marginTop4 {
+        margin-top: calc(var(--marginHMobile)*4);
+    }
 
 }

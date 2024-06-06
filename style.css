@@ -1072,7 +1072,7 @@ footer {
     #menuItemsDesktop {
         width: calc(100vw - var(--marginHMobile)*2);
         height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - 12vh);
-        background-color: var(--grey);
+        background-color: white;
         padding: var(--marginHMobile);
         position: fixed;
         top: calc(var(--vh, 1h) * -100);
@@ -1098,16 +1098,17 @@ footer {
     }
 
     #menuItemsDesktop li {
-        font-size: calc(20px + 0.390625vw);
+        font-size: calc(30px + 0.390625vw);
     }
 
     #menuItemsDesktop p {
         font-size: calc(16px + 0.390625vw);
         position: absolute;
-        top: 0;
-        right: var(--marginHMobile);;
+        top: calc(var(--marginHMobile)/2);
+        right: var(--marginHMobile);
         margin-right: 0 var(--marginHMobile) 0 0;
     }
+
 
     .active {
         transition: top 1s;

@@ -1102,10 +1102,9 @@ footer {
     #menuItemsDesktop p {
         font-size: calc(16px + 0.390625vw);
         position: absolute;
-        bottom: 0;
+        top: var(--marginHMobile);
         right: 0;
-        margin-bottom: var(--marginHMobile);
-        margin-right: var(--marginHMobile);
+        margin-right: 0 var(--marginHMobile) 0 0;
     }
 
     .active {

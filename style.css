@@ -750,6 +750,10 @@ footer {
         font-weight: 700;
     }
 
+    h4 {
+        font-size: calc(15px + 0.390625vw);
+    }
+
     #menuIconDesktop {
         width: calc(var(--marginHMobile));
     }
@@ -927,7 +931,9 @@ footer {
 
     }
 
-
+    .visitaDiv{
+        padding: var(--marginHMobile) 0 !important;;
+    }
 
     .menuHeader img {
         height: calc(var(--marginHMobile)* 0.7);

@@ -652,7 +652,7 @@ header {
     }
 
     50% {
-        transform: scale(2);
+        transform: scale(1.5);
     }
 
     100% {
@@ -660,9 +660,13 @@ header {
     }
 }
 
-#mapaChaves {
+#mapaChavesDesktop {
     position: relative;
     display: inline-block;
+}
+
+#mapaChavesMobile{
+    display: none;
 }
 
 .ellipse {
@@ -916,9 +920,16 @@ footer {
         }
     }
 
-    #mapaChaves {
+     #mapaChavesMobile {
+        display: block;
         position: relative;
         display: inline-block;
+        height: 50vh;
+        width: 100%;
+    }
+
+    #mapaChavesDesktop{
+        display: none;
     }
 
     .ellipse {
@@ -930,12 +941,37 @@ footer {
         height: 3vw;
     }
 
-    #mapaChaves {
-        height: 50vh;
-        width: 100%;
+    #ellipseTermas {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+    }
+    
+    #infoEllipseTermas {
+        position: absolute;
+        top: 25%;
+        right: 30%;
+        width:40vw;
+    }
+    
+    #ellipsePonte {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+    }
+    
+    #infoEllipsePonte {
+        position: absolute;
+        top:62%;
+        right: 18%;
+
+        width:40vw;
     }
 
 
+    .infoEllipse {
+        padding: calc(var(--marginHMobile)/2);
+    }
 
 
 

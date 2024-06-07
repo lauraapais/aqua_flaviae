@@ -302,6 +302,8 @@ header {
 /*patrimonio mundial*/
 .imagePatrimonio img {
     height: 50vh;
+    width:100%;
+    object-fit: cover;
     border-radius: var(--borderRadius);
 }
 
@@ -883,7 +885,7 @@ footer {
     }
 
     .h1Div {
-        width: 100%;
+        width: 100%!important;
     }
 
 

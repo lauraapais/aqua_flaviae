@@ -1,6 +1,10 @@
 /*! Flickity v2.3.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
+:root {
+  --marginH: 2vw;
+  --marginHMobile: 6vw;
+}
 
 .flickity-enabled {
   position: relative;
@@ -27,7 +31,7 @@ https://flickity.metafizzy.co
   display: block;
   max-width: 100%;
   max-height: initial!important;
-  margin-right: 2vw;
+  margin-right: var(--marginH);
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);

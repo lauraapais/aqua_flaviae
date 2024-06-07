@@ -981,7 +981,11 @@ footer {
     .agenda {
         flex-direction: column;
         min-width: 50vw !important;
-        padding: var(--marginHMobile);
+        padding: calc(var(--marginHMobile)/1.5) 0;
+    }
+
+    .agendaDate{
+        margin-top: calc(var(--marginHMobile)/4);
     }
 
     .agendaH1 {

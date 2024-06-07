@@ -949,8 +949,9 @@ footer {
     
     #infoEllipseTermas {
         position: absolute;
-        top: 25%;
-        right: 30%;
+        top: 20%;
+        left: 10%;
+        max-width: 80%;
     }
     
     #ellipsePonte {
@@ -963,6 +964,7 @@ footer {
         position: absolute;
         top:62%;
         right: 18%;
+        max-width: 80%;
     }
 
 

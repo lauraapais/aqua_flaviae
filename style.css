@@ -1174,7 +1174,7 @@ footer {
     }
 
     #menuItemsDesktop li {
-        font-size: calc(27px + 0.390625vw);
+        font-size: calc(25px + 0.390625vw);
     }
 
     #menuItemsDesktop p {

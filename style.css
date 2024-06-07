@@ -1255,6 +1255,23 @@ footer {
 
     #textDivTopCandidatura div{
         margin:0!important;
+        align-self: flex-start;
+    }
+
+
+
+
+
+    .topDiv .newsDetails{
+        display: block;
+    }
+
+    .newsDetails{
+        align-self: flex-start;
+    }
+
+    .topDivAgenda{
+        margin:0!important;
     }
 
 }

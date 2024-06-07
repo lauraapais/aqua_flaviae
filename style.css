@@ -1270,7 +1270,7 @@ footer {
         align-self: flex-start;
     }
 
-    .topDivAgenda{
+    .topDivAgenda, .topDivNews{
         margin:0!important;
     }
 

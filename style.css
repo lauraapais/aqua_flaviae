@@ -1178,12 +1178,8 @@ footer {
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv));
         object-fit: cover;
-    }
-
-    .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
     }
 
     .imageIndex video {
@@ -1191,10 +1187,10 @@ footer {
         height: auto;
     }
 
-    #verticalImage {
+    .verticalImage {
         object-position: right;
         width: 100%!important;
-        height: 90vw!important;
+        height: 100%!important;
     }
     
 
@@ -1220,6 +1216,10 @@ footer {
 
     .buttonUnesco .button{
         margin-top: calc(var(--marginHMobile) / 2);
+    }
+
+    #textDivTopCandidatura div{
+        margin:0!important;
     }
 
 }

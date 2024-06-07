@@ -302,7 +302,7 @@ header {
 /*patrimonio mundial*/
 .imagePatrimonio img {
     height: 50vh;
-    width:100%;
+    width: 100%;
     object-fit: cover;
     border-radius: var(--borderRadius);
 }
@@ -405,6 +405,13 @@ header {
 
 /*index*/
 .imageIndex img {
+    width: 100%;
+    height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.imageCandidatura img {
     width: 100%;
     height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
     object-fit: cover;
@@ -760,6 +767,7 @@ footer {
 
     h4 {
         font-size: calc(15px + 0.390625vw);
+        margin-bottom: calc(var(--marginHMobile) /2);
     }
 
     footer {
@@ -885,7 +893,7 @@ footer {
     }
 
     .h1Div {
-        width: 100%!important;
+        width: 100% !important;
     }
 
 
@@ -974,10 +982,8 @@ footer {
         flex-direction: column;
     }
 
-    .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
-        object-fit: cover;
-    }
+
+
 
     #logoEstatico {
         width: auto !important;
@@ -1151,10 +1157,14 @@ footer {
     }
 
 
+    .imageCandidatura {
+        height: calc(var(--vh, 1h)* 90 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
+    }
 
-    .imageIndex video {
+    .imageCandidatura img {
+        height: 100%;
         width: 100%;
-        height: auto;
+        object-fit: cover;
     }
 
     .imagePatrimonio {
@@ -1169,6 +1179,16 @@ footer {
 
     .imageIndex img {
         height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
+        object-fit: cover;
+    }
+
+    .imageIndex img {
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
+    }
+
+    .imageIndex video {
+        width: 100%;
+        height: auto;
     }
 
     #verticalImage {

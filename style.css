@@ -1193,7 +1193,10 @@ footer {
 
     #verticalImage {
         object-position: right;
+        width: 100%!important;
+        height: 90vw!important;
     }
+    
 
     .section div:first-child {
         margin-bottom: calc(var(--marginHMobile));

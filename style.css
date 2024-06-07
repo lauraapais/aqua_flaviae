@@ -85,7 +85,7 @@ h4 {
 }
 
 .bold {
-    font-weight: 700 !important;
+    font-weight: 650 !important;
 }
 
 .regular {
@@ -287,7 +287,7 @@ header {
 }
 
 .selected {
-    font-weight: 700;
+    font-weight: 650;
 }
 
 #logoPart1 {
@@ -417,7 +417,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
-    padding: var(--marginH);
+    padding: var(--marginH) calc(var(--marginH)/2);
     border-radius: var(--borderRadius);
     transition: background-color 0.5s;
 }
@@ -450,7 +450,6 @@ header {
 }
 
 .agendaArrow {
-    display: none;
     align-items: flex-end;
     margin-left: calc(var(--marginH));
     align-self: flex-end;
@@ -485,11 +484,14 @@ header {
     transform: stroke-width 1s;
 }
 
+.new
+
 .newsLink {
     position: relative;
 }
 
 .news .agendaArrow {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -526,7 +528,7 @@ header {
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
-    padding: calc(var(--marginH));
+    padding: var(--marginH) calc(var(--marginH)/2);
     border-radius: var(--borderRadius);
     height: 5vw;
 }

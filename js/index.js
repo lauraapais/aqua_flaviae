@@ -58,5 +58,8 @@
 var flkty = new Flickity( '.main-gallery', {
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    arrowShape: 'M72.7,100c-1.1,0-2.1-.4-2.9-1.2L21.6,50,69.8,1.2c1.6-1.6,4.2-1.6,5.8,0,1.6,1.6,1.6,4.2,0,5.8l-42.5,43,42.5,43c1.6,1.6,1.6,4.2,0,5.8-.8.8-1.8,1.2-2.9,1.2Z'
+
   });
+

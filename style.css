@@ -202,12 +202,12 @@ header {
     gap: var(--marginH);
 }
 
-.h1Div{
-    width:50%;
+.h1Div {
+    width: 50%;
 }
 
-.h1Div h1{
-    text-wrap:pretty;
+.h1Div h1 {
+    text-wrap: pretty;
 }
 
 
@@ -301,7 +301,7 @@ header {
 
 /*patrimonio mundial*/
 .imagePatrimonio img {
-    height: 50vh !important;
+    height: 50vh;
     border-radius: var(--borderRadius);
 }
 
@@ -484,9 +484,7 @@ header {
     transform: stroke-width 1s;
 }
 
-.new
-
-.newsLink {
+.new .newsLink {
     position: relative;
 }
 
@@ -506,7 +504,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     text-wrap: wrap;
-    width:90%;
+    width: 90%;
 }
 
 .newsImage {
@@ -861,7 +859,8 @@ footer {
         margin-bottom: calc(var(--marginHMobile));
     }
 
-    .imageSectionFlex img , .imageSectionFlex video{
+    .imageSectionFlex img,
+    .imageSectionFlex video {
         width: 100%;
         margin-bottom: var(--marginHMobile);
     }
@@ -871,20 +870,20 @@ footer {
         gap: var(--marginHMobile);
     }
 
-    .alignEnd{
+    .alignEnd {
         justify-content: flex-start;
     }
 
-    .news .agendaArrow{
-        display: none!important;
+    .news .agendaArrow {
+        display: none !important;
     }
 
-    .agenda .agendaArrow{
-        width:10%;
+    .agenda .agendaArrow {
+        width: 10%;
     }
 
-    .h1Div{
-        width:100%;
+    .h1Div {
+        width: 100%;
     }
 
 
@@ -943,7 +942,7 @@ footer {
 
 
 
-    .menuIcon svg{
+    .menuIcon svg {
         width: 5vw;
     }
 
@@ -958,8 +957,9 @@ footer {
 
     }
 
-    .visitaDiv{
-        padding: var(--marginHMobile) 0 !important;;
+    .visitaDiv {
+        padding: var(--marginHMobile) 0 !important;
+        ;
     }
 
     .menuHeader img {
@@ -973,7 +973,7 @@ footer {
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
         object-fit: cover;
     }
 
@@ -988,7 +988,7 @@ footer {
         padding: calc(var(--marginHMobile)/1.5) 0;
     }
 
-    .agendaDate{
+    .agendaDate {
         margin-top: calc(var(--marginHMobile)/4);
     }
 
@@ -1015,15 +1015,15 @@ footer {
         text-wrap: wrap;
     }
 
-    .agendaDetails{
-        width:90%;
+    .agendaDetails {
+        width: 90%;
     }
 
     .agendaDetails p {
         text-wrap: wrap;
     }
 
-    .agendaDetails{
+    .agendaDetails {
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -1031,7 +1031,7 @@ footer {
     }
 
     .agendaH1 {
-        width:80%;
+        width: 80%;
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
 
@@ -1050,7 +1050,7 @@ footer {
 
     .news {
         min-width: 70vw !important;
-        margin-bottom: 0!important;
+        margin-bottom: 0 !important;
     }
 
     .newsH1Title p:first-child {
@@ -1073,7 +1073,7 @@ footer {
     .newsH1 {
         display: flex;
         flex-direction: column;
-        width:100%;
+        width: 100%;
     }
 
     .newsH1 svg {
@@ -1155,24 +1155,30 @@ footer {
         height: auto;
     }
 
+    .imagePatrimonio {
+        height: calc(var(--vh, 1h)* 90 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
+    }
+
     .imagePatrimonio img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
+        height: 100%;
+        width: auto;
+        object-fit: cover;
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv)) !important;
     }
 
-    #verticalImage{
+    #verticalImage {
         object-position: right;
     }
 
-    .section div:first-child{
+    .section div:first-child {
         margin-bottom: calc(var(--marginHMobile));
     }
 
-    .noticiasGeral{
-        margin-bottom: 0!important;
+    .noticiasGeral {
+        margin-bottom: 0 !important;
     }
 
 

@@ -875,8 +875,12 @@ footer {
         justify-content: flex-start;
     }
 
-    .agendaArrow{
+    .news .agendaArrow{
         display: none!important;
+    }
+
+    .agenda .agendaArrow{
+        width:10%;
     }
 
     .h1Div{
@@ -963,13 +967,13 @@ footer {
     }
 
     .topDiv {
-        height: var(--topDivMobile);
+        min-height: var(--topDivMobile);
         display: flex;
         flex-direction: column;
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2);
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
         object-fit: cover;
     }
 
@@ -988,11 +992,6 @@ footer {
         margin-top: calc(var(--marginHMobile)/4);
     }
 
-    .agendaH1 {
-        width: 100%;
-    }
-
-
     .agendaArrow svg {
         width: 3.5vw;
     }
@@ -1010,12 +1009,14 @@ footer {
         white-space: nowrap;
     }
 
-    .agendaGeneral svg {
-        display: none;
-    }
+
 
     .agendaGeneral {
         text-wrap: wrap;
+    }
+
+    .agendaDetails{
+        width:90%;
     }
 
     .agendaDetails p {
@@ -1030,6 +1031,7 @@ footer {
     }
 
     .agendaH1 {
+        width:80%;
         margin-bottom: calc(var(--marginHMobile) / 2);
     }
 
@@ -1083,15 +1085,11 @@ footer {
         margin-top: calc(var(--marginHMobile) / 2);
     }
 
-    
-
     .newsDetails {
         display: none;
     }
 
-    .arrowScroll img {
-        display: none;
-    }
+
 
     .visitaDiv {
         height: fit-content;
@@ -1158,11 +1156,11 @@ footer {
     }
 
     .imagePatrimonio img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 4 - var(--topDiv)* 2)!important;
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
     }
 
     .imageIndex img {
-        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDivMobile)*2)!important
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
     }
 
     #verticalImage{

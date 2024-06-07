@@ -749,6 +749,10 @@ footer {
         font-size: calc(13px + 0.390625vw);
     }
 
+    .newsDetails p {
+        font-size: calc(13px + 0.390625vw);
+    }
+
     .newsH1Title p:last-child {
         font-size: calc(13px + 0.390625vw);
     }

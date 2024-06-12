@@ -10,7 +10,7 @@
 
 
     --black: #212121;
-    --grey: #F7F7F7;
+    --grey: #EFEFEF;
 
 }
 
@@ -98,10 +98,12 @@ h4 {
 
 ::-moz-selection {
     background: var(--grey);
+    color: #000;
 }
 
 ::selection {
     background: var(--grey);
+    color: #000;
 }
 
 a {
@@ -362,13 +364,13 @@ header {
     gap: var(--marginH);
 }
 
-#hidden_Ninfeu, #hidden_Ponte {
+#hidden_Ninfeu, #hidden_Ponte, #hidden_Hidraul, #hidden_Escombros{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin 0.5s ease-in-out;
 }
 
-#seeLess_Ninfeu, #seeLess_Ponte{
+#seeLess_Ninfeu, #seeLess_Ponte, #seeLess_Hidraul, #seeLess_Escombros{
     display: none;
 }
 

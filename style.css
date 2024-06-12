@@ -362,13 +362,13 @@ header {
     gap: var(--marginH);
 }
 
-#hidden_Ninfeu {
+#hidden_Ninfeu, #hidden_Ponte {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin 0.5s ease-in-out;
 }
 
-#seeLess_Ninfeu{
+#seeLess_Ninfeu, #seeLess_Ponte{
     display: none;
 }
 

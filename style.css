@@ -402,7 +402,17 @@ header {
 
 #artigos, #bibliografia{
     margin-bottom: calc(var(--marginH)/4);
+    transition: margin-left 0.5s;
 }
+
+
+#artigos:hover, #bibliografia:hover{
+    margin-left: 1vw;
+    transition: margin-left 0.5s;
+    cursor: pointer;
+}
+
+
 
 #hidden_Artigos p:last-child
 , #hidden_Bibliografia p:last-child{

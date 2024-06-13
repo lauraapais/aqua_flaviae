@@ -450,6 +450,10 @@ header {
 
 
 /*index*/
+#titleIndexMobile{
+    display: none;
+}
+
 .imageIndex img {
     width: 100%;
     height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
@@ -1036,6 +1040,10 @@ footer {
 
 
     /*index*/
+
+    #titleIndexDesktop{
+        display: none;
+    }
     .geralDiv {
         padding: 0;
         margin: 0;
@@ -1277,6 +1285,12 @@ footer {
         height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv));
         object-fit: cover;
     }
+
+    #videoIndex{
+        height: calc(var(--vh, 1h)* 100 - var(--marginHMobile)* 6 - var(--topDiv))!important;
+        object-fit: cover;
+    }
+    
 
     .imageIndex video {
         width: 100%;

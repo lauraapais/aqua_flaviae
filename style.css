@@ -225,9 +225,12 @@ header {
 
 
 .h1Div {
-    width: 55%;
+    width: 50%;
 }
 
+.textDiv .h1Div{
+    width: 60%!important;
+}
 .h1Div h1 {
     text-wrap: pretty;
 }

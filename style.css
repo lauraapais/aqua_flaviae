@@ -97,6 +97,15 @@ h4 {
     font-style: italic;
 }
 
+.bolditalic{
+    font-weight: 650 !important;
+    font-style: italic;
+}
+
+footer .italic{
+    color: white!important;
+}
+
 .regular {
     font-weight: 500 !important;
 }

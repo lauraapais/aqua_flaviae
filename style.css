@@ -880,6 +880,10 @@ footer {
         top: auto;
     }
 
+    .textDiv50 .div50 {
+        margin: var(--marginH) 0 !important ;
+    }
+
     .marginTopDefault {
         margin-top: var(--marginHMobile);
     }
@@ -889,7 +893,7 @@ footer {
     }
 
     .marginTopDouble {
-        margin-top: calc(var(--marginHMobile) * 2);
+        margin-top: calc(var(--marginHMobile) * 1.5);
     }
 
     .marginBottomDouble {
@@ -926,6 +930,12 @@ footer {
     .button {
         padding: calc(var(--marginHMobile) / 4) calc(var(--marginHMobile) / 2);
     }
+
+    .buttonUnesco{
+        margin:0 !important;
+    }
+
+
 
     .textDiv50 {
         flex-direction: column;

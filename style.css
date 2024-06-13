@@ -48,6 +48,7 @@ h3 {
 
 .legenda{
     font-size: calc(8px + 0.390625vw)!important;
+    width:80%;
 }
 
 .button {
@@ -454,6 +455,10 @@ header {
     display: none;
 }
 
+#titleIndexDesktop{
+    display: block;
+}
+
 .imageIndex img {
     width: 100%;
     height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
@@ -810,6 +815,11 @@ footer {
         font-size: calc(13px + 0.390625vw);
     }
 
+    .legenda{
+        font-size: calc(12px + 0.390625vw)!important;
+        width:100%;
+    }
+
     .newsDetails p {
         font-size: calc(13px + 0.390625vw);
     }
@@ -895,8 +905,14 @@ footer {
     }
 
     .marginTopTriple {
-        margin-top: calc(var(--marginHMobile)* 3);
+        margin-top: calc(var(--marginHMobile)* 2);
     }
+
+    .marginTop4 {
+        margin-top: calc(var(--marginHMobile)* 2);
+    }
+
+    
 
     .footerContent {
         align-items: flex-start;
@@ -941,7 +957,6 @@ footer {
     .imageSectionFlex img,
     .imageSectionFlex video {
         width: 100%;
-        margin-bottom: var(--marginHMobile);
     }
 
     .section {
@@ -1040,10 +1055,14 @@ footer {
 
 
     /*index*/
-
     #titleIndexDesktop{
         display: none;
     }
+
+    #titleIndexMobile{
+        display: block;
+    }
+
     .geralDiv {
         padding: 0;
         margin: 0;
@@ -1333,6 +1352,16 @@ footer {
         align-self: flex-start;
     }
 
+
+    .textDiv h3{
+        margin: 0!important;
+    }
+
+
+    .imageLeg{
+        width:100%;
+        margin-bottom: calc(var(--marginHMobile)/2);
+    }
 
 
 

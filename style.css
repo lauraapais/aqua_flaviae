@@ -403,6 +403,7 @@ header {
 #artigos, #bibliografia{
     margin-bottom: calc(var(--marginH)/4);
     transition: margin-left 0.5s;
+    font-weight: 600;
 }
 
 
@@ -411,7 +412,6 @@ header {
     transition: margin-left 0.5s;
     cursor: pointer;
 }
-
 
 
 #hidden_Artigos p:last-child

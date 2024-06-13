@@ -27,31 +27,6 @@ seeLess_Ninfeu.addEventListener("click", function () {
 
 
 
-var seeMore_Ponte = document.getElementById("seeMore_Ponte");
-var seeLess_Ponte = document.getElementById("seeLess_Ponte");
-var hidden_Ponte = document.getElementById("hidden_Ponte");
-
-seeMore_Ponte.addEventListener("click", function () {
-    hidden_Ponte.classList.add("open");
-    var contentHeight = hidden_Ponte.scrollHeight + "px";
-    hidden_Ponte.classList.remove("open");
-
-    hidden_Ponte.style.maxHeight = contentHeight;
-    hidden_Ponte.classList.add("open");
-
-    seeMore_Ponte.style.display = "none";
-    seeLess_Ponte.style.display = "block";
-});
-
-seeLess_Ponte.addEventListener("click", function () {
-    hidden_Ponte.style.maxHeight = "0"; 
-    hidden_Ponte.classList.remove("open");
-    
-    seeMore_Ponte.style.display = "block";
-    seeLess_Ponte.style.display = "none";
-});
-
-
 
 
 
@@ -108,3 +83,29 @@ seeLess_Escombros.addEventListener("click", function () {
     seeLess_Escombros.style.display = "none";
 });
 
+
+
+
+    var artigos = document.getElementById("artigos");
+    var bibliografia = document.getElementById("bibliografia");
+    var hiddenArtigos = document.getElementById("hidden_Artigos");
+    var hiddenBibliografia = document.getElementById("hidden_Bibliografia");
+
+        artigos.addEventListener("click", function () {
+            toggleSection(hiddenArtigos);
+        });
+
+        bibliografia.addEventListener("click", function () {
+            toggleSection(hiddenBibliografia);
+        });
+
+    function toggleSection(hiddenElement) {
+        if (hiddenElement.classList.contains("open")) {
+            hiddenElement.style.maxHeight = "0";
+            hiddenElement.classList.remove("open");
+        } else {
+            hiddenElement.classList.add("open");
+            var contentHeight = hiddenElement.scrollHeight + "px";
+            hiddenElement.style.maxHeight = contentHeight;
+        }
+    }

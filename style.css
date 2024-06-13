@@ -46,6 +46,10 @@ h3 {
     text-wrap: pretty;
 }
 
+.legenda{
+    font-size: calc(8px + 0.390625vw)!important;
+}
+
 .button {
     font-size: calc(10px + 0.390625vw);
 }
@@ -334,14 +338,24 @@ header {
     justify-content: space-between;
 }
 
-.imageSectionFlex img {
+.imageLeg {
     width: 30%;
+    height: auto;
     border-radius: var(--borderRadius);
+}
+
+.imageLeg img, .imageLeg video{
+    width:100%;
+    height: auto;
 }
 
 .section50 .imageSection,
 .section50 .textDiv {
     width: calc(50% - var(--marginH)/2);
+}
+
+.imageSection video{
+    width:100%;
 }
 
 .imagePatrimonio50 {
@@ -374,7 +388,29 @@ header {
     display: none;
 }
 
+.adicionalBot{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+
+#artigos, #bibliografia{
+    margin-bottom: calc(var(--marginH)/4);
+}
+
+#hidden_Artigos p:last-child
+, #hidden_Bibliografia p:last-child{
+    margin-bottom: calc(var(--marginH)/2);
+}
+
+#hidden_Artigos, #hidden_Bibliografia {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin 0.5s ease-in-out;
+}
 
 
 /*Unesco*/
@@ -383,8 +419,8 @@ header {
     justify-content: space-between
 }
 
-.textDiv50 div {
-    width: calc(50% - var(--marginH));
+.textDiv50 .div50 {
+    width: calc(50% - var(--marginH) / 2);
 }
 
 .textDiv50 .buttonUnesco {
@@ -406,11 +442,6 @@ header {
     width: 100%;
     height: calc(100vh - var(--marginH)* 2 - var(--topDiv));
     object-fit: cover;
-    border-radius: var(--borderRadius);
-}
-
-.imageSectionFlex video {
-    width: 30%;
     border-radius: var(--borderRadius);
 }
 
@@ -623,6 +654,17 @@ header {
     display: none;
 }
 
+
+/*candidatura*/
+#hidden_Social, #hidden_Imperios{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin 0.5s ease-in-out;
+}
+
+#seeLess_Social, #seeLess_Imperios{
+    display: none;
+}
 
 
 
@@ -869,7 +911,7 @@ footer {
         flex-direction: column;
     }
 
-    .textDiv50 div {
+    .textDiv50 .div50 {
         width: 100%;
         margin-bottom: var(--marginHMobile);
     }

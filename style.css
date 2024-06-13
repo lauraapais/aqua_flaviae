@@ -409,14 +409,14 @@ header {
 }
 
 
-#artigos, #bibliografia{
+#artigos, #bibliografia, #cartas{
     margin-bottom: calc(var(--marginH)/4);
     transition: margin-left 0.5s;
     font-weight: 600;
 }
 
 
-#artigos:hover, #bibliografia:hover{
+#artigos:hover, #bibliografia:hover, #cartas:hover{
     margin-left: 1vw;
     transition: margin-left 0.5s;
     cursor: pointer;
@@ -424,11 +424,12 @@ header {
 
 
 #hidden_Artigos p:last-child
-, #hidden_Bibliografia p:last-child{
+, #hidden_Bibliografia p:last-child
+, #hidden_Cartas p:last-child{
     margin-bottom: calc(var(--marginH)/2);
 }
 
-#hidden_Artigos, #hidden_Bibliografia {
+#hidden_Artigos, #hidden_Bibliografia, #hidden_Cartas {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin 0.5s ease-in-out;

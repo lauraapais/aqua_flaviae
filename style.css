@@ -1267,7 +1267,6 @@ footer {
     #menuItemsDesktop.show {
         display: flex;
         top: calc(var(--vh, 1h) * 0);
-        transition: top 0.7s linear;
     }
 
     .menuIcon svg {

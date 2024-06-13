@@ -1261,12 +1261,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         gap: calc(var(--marginH) * 2);
-        transition: top 0.7s linear;
+        transition: all 0.7s linear;
+        opacity: 1;
     }
 
     #menuItemsDesktop.show {
         display: flex;
         top: calc(var(--vh, 1h) * 0);
+        opacity: 1;
     }
 
     .menuIcon svg {

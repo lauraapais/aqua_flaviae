@@ -86,14 +86,16 @@ seeLess_Escombros.addEventListener("click", function () {
 
 
 
-    var artigos = document.getElementById("artigos");
+    
     var bibliografia = document.getElementById("bibliografia");
-    var hiddenArtigos = document.getElementById("hidden_Artigos");
     var hiddenBibliografia = document.getElementById("hidden_Bibliografia");
+/** 
+    var artigos = document.getElementById("artigos");
+    var hiddenArtigos = document.getElementById("hidden_Artigos");
 
         artigos.addEventListener("click", function () {
             toggleSection(hiddenArtigos);
-        });
+        });*/
 
         bibliografia.addEventListener("click", function () {
             toggleSection(hiddenBibliografia);
